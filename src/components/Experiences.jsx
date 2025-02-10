@@ -25,7 +25,7 @@ const Experiences = () => {
         {experiences &&
           experiences.map((exp) => (
             <a key={exp.name} href="#">
-              <div className="hover:bg-secondary group flex items-center justify-between gap-2 rounded-lg px-2 py-3">
+              <div className="bg-secondary hover:bg-primary group flex items-center justify-between gap-2 rounded-lg px-2 py-3">
                 <div className="flex flex-col gap-2">
                   <div className="text-md px-2 font-bold">{exp.name}</div>
                   <div className="px-2">{exp.description}</div>

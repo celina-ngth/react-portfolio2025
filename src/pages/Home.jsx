@@ -9,18 +9,17 @@ const Home = () => {
       <div>
         <PageHeading
           title="Software engineer"
-          description="Passionate about creating intuitive and engaging user experiences.
-							Specialize in transforming ideas into beautifully crafted
-							products."
+          description="Développeuse front-end JavaScript depuis plus de 4 ans, je suis dotée d’une sensibilité graphique tirée de mes études de design et je bénéficie de 3 ans d’expériences précédentes en temps que Product Owner. J’accorde depuis, une attention particulière à l’expérience utilisateur et à la qualité des interfaces, pour créer des produits aussi fonctionnels que solides techniquement.
+          Mon état d’esprit : apprendre chaque jour, trouver des solutions et toujours m’améliorer 💪"
         />
         <section className="flex gap-4">
           <div>
             <p className="text-lg font-bold">4 ans</p>
-            <p>expérience front-end</p>
+            <p>d&apos;expérience front-end</p>
           </div>
           <div>
-            <p className="text-lg font-bold">2</p>
-            <p>projets</p>
+            <p className="text-lg font-bold">3 ans</p>
+            <p>de product ownership</p>
           </div>
         </section>
       </div>

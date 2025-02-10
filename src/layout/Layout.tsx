@@ -7,8 +7,8 @@ const Layout = ({ children }) => {
     <>
       <Header />
 
-      <main className="container mx-auto min-h-screen px-4 py-4">
-        <div className="grid gap-8 lg:flex lg:grid-cols-3 lg:py-4">
+      <main className="container mx-auto min-h-screen py-4 lg:px-4">
+        <div className="gap-6 lg:grid lg:grid-cols-3 lg:py-4">
           <div className="col-span-1">
             <Sidebar />
           </div>
