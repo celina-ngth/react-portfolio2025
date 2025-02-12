@@ -1,57 +1,47 @@
+import { useParams } from 'react-router-dom'
+import { useState, useEffect } from 'react'
 import PageHeading from '../components/PageHeading'
-import ProjectCard from '../components/ProjectCard'
+import { getProject } from '../api/projects'
 
 const ProjectPage = () => {
-  const projects = [
-    {
-      title: 'Maisons du Monde',
-      description: 'Site de vente de maisons',
-      size: 'large',
-      image:
-        'https://framerusercontent.com/images/0Mi0IWlbWJU3AYT2hGFzEwO4Ku8.png?scale-down-to=4096',
-    },
-    {
-      title: 'Fiters',
-      description: 'Site de vente de maisons',
-      size: 'small',
-      image:
-        'https://framerusercontent.com/images/0Mi0IWlbWJU3AYT2hGFzEwO4Ku8.png?scale-down-to=4096',
-    },
-  ]
+  const { id } = useParams()
+
+  const [project, setProject] = useState([])
+  const [error, setError] = useState(null)
+
+  useEffect(() => {
+    const fetchProject = async () => {
+      try {
+        const project = await getProject(id)
+        setProject(project)
+      } catch (error) {
+        setError(error)
+      }
+    }
+    fetchProject()
+  }, [])
+
+  if (error) {
+    return <div>Error loading project list: {error.message}</div>
+  }
 
   return (
     <>
-      <div className="pb-8">
-        <PageHeading title={'Projets professionnels'} />
-        <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
-          {projects &&
-            projects.map((project) => (
-              <ProjectCard
-                key={project.title}
-                title={project.title}
-                description={project.description}
-                image={project.image}
-                size={project.size}
-              />
-            ))}
+      {project && (
+        <div className="flex flex-col gap-4">
+          <img className="w-full rounded-xl" src={project.image} />
+          <PageHeading title={project.title} />
+          <p>{project.context}</p>
+          <p>{project.description}</p>
+          {project.list && (
+            <ul>
+              {project.list.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+          )}
         </div>
-      </div>
-
-      <div>
-        <PageHeading title={'Autres réalisations'} />
-        <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
-          {projects &&
-            projects.map((project) => (
-              <ProjectCard
-                key={project.title}
-                title={project.title}
-                description={project.description}
-                image={project.image}
-                size={project.size}
-              />
-            ))}
-        </div>
-      </div>
+      )}
     </>
   )
 }

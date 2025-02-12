@@ -1,21 +1,13 @@
 import { Link } from 'react-router-dom'
 
-const ProjectCard = ({ title, description, image, size }) => {
+const ProjectCard = ({ title, description, image, size, link }) => {
   return (
     <>
       {title && description && (
-        <Link to="/">
-          <div
-            className={`bg-secondary rounded-lg ${
-              size === 'small' ? 'col-span-1' : 'md:col-span-2'
-            }`}
-          >
+        <Link to={link}>
+          <div className={`bg-secondary rounded-lg`}>
             <img
-              className={`rounded-t-lg ${
-                size === 'small'
-                  ? 'object-cover md:aspect-square'
-                  : 'w-full object-cover md:max-h-[184px]'
-              }`}
+              className={`rounded-t-lg ${size === 'small' ? '' : ''}`}
               src={image}
               alt=""
             />

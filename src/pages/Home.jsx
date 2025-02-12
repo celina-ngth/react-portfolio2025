@@ -1,5 +1,5 @@
 import PageHeading from '../components/PageHeading'
-import Projects from '../components/Projects'
+import ProjectList from '../components/ProjectList'
 import Tools from '../components/Tools'
 import Experiences from '../components/Experiences'
 
@@ -26,7 +26,7 @@ const Home = () => {
 
       <div>
         <PageHeading title="Projets récents" />
-        <Projects />
+        <ProjectList />
       </div>
 
       <div>

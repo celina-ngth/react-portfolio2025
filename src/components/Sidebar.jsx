@@ -2,11 +2,11 @@ import { Link, Mail, MapPin } from 'lucide-react'
 
 const Sidebar = () => {
   return (
-    <div className="bg-secondary top-4 mb-4 flex h-fit w-full items-center gap-4 rounded-xl p-3 lg:sticky lg:flex-col lg:p-4">
+    <div className="bg-secondary top-4 mb-4 flex h-fit w-full flex-col items-center gap-4 rounded-xl p-3 md:flex-row md:items-center lg:sticky lg:flex-col lg:p-4">
       <img
         src="https://framerusercontent.com/images/H3gQyzjQNWcYB4RqhjHgnNIOI.png?scale-down-to=500"
         alt="Célina Ngeth"
-        className="w-full rounded-md object-cover"
+        className="w-full rounded-md object-cover md:w-[200px] lg:w-full"
       />
 
       <div>

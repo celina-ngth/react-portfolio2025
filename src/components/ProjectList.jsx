@@ -1,36 +1,42 @@
 import { MoveRight } from 'lucide-react'
 import ProjectCard from './ProjectCard'
 import { Link } from 'react-router-dom'
+import { getProjectList } from '../api/projects'
+import { useState, useEffect } from 'react'
 
-const Projects = () => {
-  const projects = [
-    {
-      title: 'Maisons du Monde',
-      description: 'Site de vente de maisons',
-      size: 'large',
-      image:
-        'https://framerusercontent.com/images/0Mi0IWlbWJU3AYT2hGFzEwO4Ku8.png?scale-down-to=4096',
-    },
-    {
-      title: 'Fiters',
-      description: 'Site de vente de maisons',
-      size: 'small',
-      image:
-        'https://framerusercontent.com/images/0Mi0IWlbWJU3AYT2hGFzEwO4Ku8.png?scale-down-to=4096',
-    },
-  ]
+const ProjectList = () => {
+  const [projectList, setProjectList] = useState([])
+  const [error, setError] = useState(null)
+
+  useEffect(() => {
+    const fetchProjectList = async () => {
+      try {
+        const list = await getProjectList()
+        const pro = list.filter((project) => project.type === 'pro')
+        setProjectList(pro)
+      } catch (error) {
+        setError(error)
+      }
+    }
+    fetchProjectList()
+  }, [])
+
+  if (error) {
+    return <div>Error loading project list: {error.message}</div>
+  }
 
   return (
     <>
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
-        {projects &&
-          projects.map((project) => (
+      <div className="flex gap-4">
+        {projectList &&
+          projectList.map((project) => (
             <ProjectCard
               key={project.title}
               title={project.title}
               description={project.description}
               image={project.image}
               size={project.size}
+              link={project.link}
             />
           ))}
 
@@ -49,4 +55,4 @@ const Projects = () => {
   )
 }
 
-export default Projects
+export default ProjectList
