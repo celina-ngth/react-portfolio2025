@@ -3,6 +3,7 @@ export const PROJECT_LIST = [
     title: 'Maisons du Monde',
     description: 'Site de vente de maisons',
     size: 'large',
+    dates: `2021 - aujourd'hui`,
     image:
       'https://framerusercontent.com/images/0Mi0IWlbWJU3AYT2hGFzEwO4Ku8.png?scale-down-to=4096',
     link: '/project/maisons-du-monde',
@@ -12,6 +13,7 @@ export const PROJECT_LIST = [
     title: 'Fiters',
     description: 'Site de vente de maisons',
     size: 'small',
+    dates: `février 2021 - septembre 2021 (8 mois)`,
     image:
       'https://framerusercontent.com/images/0Mi0IWlbWJU3AYT2hGFzEwO4Ku8.png?scale-down-to=4096',
     link: '/project/fiters',
@@ -46,7 +48,7 @@ export const PROJECT_LIST = [
   },
 ]
 
-export const TOOLS_LIST = [
+export const TOOLS = [
   'Vue3 Composition API',
   'Typescript',
   'JavaScript',
@@ -133,7 +135,7 @@ export const EDUCATION = [
   },
 ]
 
-export const PROFESSIONAL_EDUCATION = [
+export const FORMATIONS = [
   {
     title: `Software craftsmanship TDD`,
     school: 'Human Coders',

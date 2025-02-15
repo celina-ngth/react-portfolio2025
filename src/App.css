@@ -36,13 +36,10 @@
 
 @layer components {
     h1 {
-      font-size: var(--text-xl);
-      line-height: 3rem;
       font-weight: bold;
     }
 
     h2 {
-      font-size: var(--text-lg);
       font-weight: bold;
     }
 }

@@ -15,7 +15,7 @@ const Header = () => {
           </Link>
           <Link to={'/experiences'}>
             <div className="text-sm font-semibold tracking-tight">
-              expériences
+              expériences et formations
             </div>
           </Link>
           <Link to={'/contact'}>

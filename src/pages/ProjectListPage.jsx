@@ -1,45 +1,25 @@
-import { useState, useEffect } from 'react'
 import PageHeading from '../components/PageHeading'
 import ProjectCard from '../components/ProjectCard'
-import { getProjectList } from '../api/projects'
+import { PROJECT_LIST } from '../api/data'
 
 const ProjectListPage = () => {
-  const [projectList, setProjectList] = useState([])
-  const [otherList, setOtherList] = useState([])
-  const [error, setError] = useState(null)
-
-  useEffect(() => {
-    const fetchProjectList = async () => {
-      try {
-        const list = await getProjectList()
-        const pro = list.filter((project) => project.type === 'pro')
-        const other = list.filter((project) => project.type === 'other')
-        setProjectList(pro)
-        setOtherList(other)
-      } catch (error) {
-        setError(error)
-      }
-    }
-    fetchProjectList()
-  }, [])
-
-  if (error) {
-    return <div>Error loading project list: {error.message}</div>
-  }
+  const pro = PROJECT_LIST.filter((project) => project.type === 'pro')
+  const other = PROJECT_LIST.filter((project) => project.type === 'other')
 
   return (
     <>
       <div className="pb-8">
         <PageHeading title={'Projets professionnels'} />
         <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
-          {projectList &&
-            projectList.map((project) => (
+          {pro &&
+            pro.map((project) => (
               <ProjectCard
                 key={project.title}
                 title={project.title}
                 description={project.description}
                 image={project.image}
                 size={project.size}
+                link={project.link}
               />
             ))}
         </div>
@@ -48,14 +28,15 @@ const ProjectListPage = () => {
       <div>
         <PageHeading title={'Autres réalisations'} />
         <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
-          {otherList &&
-            otherList.map((project) => (
+          {other &&
+            other.map((project) => (
               <ProjectCard
                 key={project.title}
                 title={project.title}
                 description={project.description}
                 image={project.image}
                 size={project.size}
+                link={project.link}
               />
             ))}
         </div>

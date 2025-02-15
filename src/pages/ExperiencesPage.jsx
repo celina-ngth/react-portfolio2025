@@ -1,12 +1,26 @@
+import { PROJECTS_DETAILS, EDUCATION, FORMATIONS } from '../api/data'
+
 import PageHeading from '../components/PageHeading'
-import Experiences from '../components/Experiences'
 
 const ExperiencesPage = () => {
   return (
-    <div>
-      <PageHeading title="Dernières expériences" />
-      <Experiences />
-    </div>
+    <>
+      <div>
+        <PageHeading title="Expériences" />
+        {PROJECTS_DETAILS &&
+          PROJECTS_DETAILS.map((exp) => <div key={exp.title}>{exp.title}</div>)}
+      </div>
+      <div>
+        <PageHeading title="Formations" />
+        {EDUCATION &&
+          EDUCATION.map((exp) => <div key={exp.title}>{exp.title}</div>)}
+      </div>
+      <div>
+        <PageHeading title="Formations professionnelles" />
+        {FORMATIONS &&
+          FORMATIONS.map((exp) => <div key={exp.title}>{exp.title}</div>)}
+      </div>
+    </>
   )
 }
 

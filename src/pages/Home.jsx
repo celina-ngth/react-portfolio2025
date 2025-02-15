@@ -2,6 +2,7 @@ import PageHeading from '../components/PageHeading'
 import ProjectList from '../components/ProjectList'
 import Tools from '../components/Tools'
 import Experiences from '../components/Experiences'
+import { TOOLS } from '../api/data'
 
 const Home = () => {
   return (
@@ -25,18 +26,18 @@ const Home = () => {
       </div>
 
       <div>
-        <PageHeading title="Projets récents" />
-        <ProjectList />
+        <PageHeading title="+4 ans d'expériences" />
+        <Experiences />
       </div>
 
       <div>
         <PageHeading title="Compétences" />
-        <Tools />
+        <Tools tools={TOOLS} />
       </div>
 
       <div>
-        <PageHeading title="+4 ans d'expériences" />
-        <Experiences />
+        <PageHeading title="Réalisations" />
+        <ProjectList />
       </div>
     </div>
   )

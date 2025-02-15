@@ -1,35 +1,16 @@
 import { MoveRight } from 'lucide-react'
 import ProjectCard from './ProjectCard'
 import { Link } from 'react-router-dom'
-import { getProjectList } from '../api/projects'
-import { useState, useEffect } from 'react'
+import { PROJECT_LIST } from '../api/data'
 
 const ProjectList = () => {
-  const [projectList, setProjectList] = useState([])
-  const [error, setError] = useState(null)
-
-  useEffect(() => {
-    const fetchProjectList = async () => {
-      try {
-        const list = await getProjectList()
-        const pro = list.filter((project) => project.type === 'pro')
-        setProjectList(pro)
-      } catch (error) {
-        setError(error)
-      }
-    }
-    fetchProjectList()
-  }, [])
-
-  if (error) {
-    return <div>Error loading project list: {error.message}</div>
-  }
+  const projects = PROJECT_LIST.filter((project) => project.type === 'other')
 
   return (
     <>
       <div className="flex gap-4">
-        {projectList &&
-          projectList.map((project) => (
+        {projects &&
+          projects.map((project) => (
             <ProjectCard
               key={project.title}
               title={project.title}

@@ -1,29 +1,11 @@
 import { useParams } from 'react-router-dom'
-import { useState, useEffect } from 'react'
 import PageHeading from '../components/PageHeading'
-import { getProject } from '../api/projects'
+import { PROJECTS_DETAILS } from '../api/data'
 
 const ProjectPage = () => {
   const { id } = useParams()
 
-  const [project, setProject] = useState([])
-  const [error, setError] = useState(null)
-
-  useEffect(() => {
-    const fetchProject = async () => {
-      try {
-        const project = await getProject(id)
-        setProject(project)
-      } catch (error) {
-        setError(error)
-      }
-    }
-    fetchProject()
-  }, [])
-
-  if (error) {
-    return <div>Error loading project list: {error.message}</div>
-  }
+  const project = PROJECTS_DETAILS.find((project) => project.id === id)
 
   return (
     <>
@@ -34,7 +16,7 @@ const ProjectPage = () => {
           <p>{project.context}</p>
           <p>{project.description}</p>
           {project.list && (
-            <ul>
+            <ul className="list-disc pl-3">
               {project.list.map((item) => (
                 <li key={item}>{item}</li>
               ))}
