@@ -32,19 +32,17 @@ const Home = () => {
 
       <div>
         <PageHeading title="+4 ans d'expériences" />
-        {experiences?.map((exp) => (
-          <Experiences key={exp.title} experience={exp} />
-        ))}
-        <Link to="/experiences">
-          <div className="bg-secondary hover:bg-primary group flex items-center justify-between rounded-lg px-2 py-3">
-            <div className="flex flex-col gap-2">
-              <div className="text-md px-2 font-bold">
-                Voir les expériences et formations
-              </div>
+        <div className="flex flex-col gap-4 divide-y divide-gray-200">
+          {experiences?.map((exp) => (
+            <Experiences key={exp.title} experience={exp} />
+          ))}
+          <Link to="/experiences">
+            <div className="group flex items-center gap-3 rounded-lg hover:text-pink-200">
+              Voir les expériences et formations
+              <MoveRight className="group-hover:animate-fade-right h-3 w-3 hover:text-pink-200" />
             </div>
-            <MoveRight className="group-hover:animate-fade-right mr-4" />
-          </div>
-        </Link>
+          </Link>
+        </div>
       </div>
 
       <div>
@@ -67,13 +65,9 @@ const Home = () => {
         </div>
 
         <Link to="/projects">
-          <div className="bg-secondary hover:bg-primary group flex items-center justify-between gap-2 rounded-lg px-2 py-3">
-            <div className="flex flex-col gap-2">
-              <div className="text-md px-2 font-bold">
-                Voir tous les projets
-              </div>
-            </div>
-            <MoveRight className="group-hover:animate-fade-right mr-4" />
+          <div className="group flex items-center gap-3 rounded-lg hover:text-pink-200">
+            Voir tous les projets
+            <MoveRight className="group-hover:animate-fade-right h-3 w-3 hover:text-pink-200" />
           </div>
         </Link>
       </div>

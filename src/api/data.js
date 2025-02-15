@@ -1,6 +1,7 @@
 export const PROJECT_LIST = [
   {
     title: 'Maisons du Monde',
+    job: 'Ingénieure front-end Vue 3',
     description: 'Site de vente de maisons',
     dates: `2021 - aujourd'hui`,
     size: 'large',
@@ -11,6 +12,7 @@ export const PROJECT_LIST = [
   },
   {
     title: 'Fiters',
+    job: 'Développeuse full-stack JS',
     description: 'Site de vente de maisons',
     dates: `Février 2021 - Septembre 2021 (8 mois)`,
     size: 'small',
