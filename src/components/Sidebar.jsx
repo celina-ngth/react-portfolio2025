@@ -1,8 +1,8 @@
-import { Link, Mail, MapPin } from 'lucide-react'
+import { Link, MapPin } from 'lucide-react'
 
 const Sidebar = () => {
   return (
-    <div className="bg-secondary top-4 mb-4 flex h-fit w-full flex-col items-center gap-4 rounded-xl p-3 md:flex-row md:items-center lg:sticky lg:flex-col lg:p-4">
+    <aside className="bg-secondary top-4 mb-4 flex h-fit w-full flex-col items-center gap-4 rounded-xl p-3 md:flex-row md:items-center lg:sticky lg:flex-col lg:p-4">
       <img
         src="https://framerusercontent.com/images/H3gQyzjQNWcYB4RqhjHgnNIOI.png?scale-down-to=500"
         alt="Célina Ngeth"
@@ -21,10 +21,6 @@ const Sidebar = () => {
             <p>Paris</p>
           </div>
           <div className="flex items-center gap-2">
-            <Mail className="h-3 w-3" />
-            <p>ngeth.celina@gmail.com</p>
-          </div>
-          <div className="flex items-center gap-2">
             <Link className="h-3 w-3" />
             <p>linkedin.com/in/celina-n</p>
           </div>
@@ -34,7 +30,7 @@ const Sidebar = () => {
           </div>
         </div>
       </div>
-    </div>
+    </aside>
   )
 }
 

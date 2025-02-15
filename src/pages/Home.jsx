@@ -1,10 +1,15 @@
 import PageHeading from '../components/PageHeading'
-import ProjectList from '../components/ProjectList'
-import Tools from '../components/Tools'
-import Experiences from '../components/Experiences'
-import { TOOLS } from '../api/data'
+import Tool from '../components/Tool'
+import Experiences from '../components/ExperienceCard'
+import ProjectCard from '../components/ProjectCard'
+import { MoveRight } from 'lucide-react'
+import { Link } from 'react-router-dom'
+import { TOOLS, PROJECT_LIST } from '../api/data'
 
 const Home = () => {
+  const experiences = PROJECT_LIST.filter((project) => project.type === 'pro')
+  const projects = PROJECT_LIST.filter((project) => project.type === 'other')
+
   return (
     <div className="flex w-full flex-col gap-8">
       <div>
@@ -27,17 +32,46 @@ const Home = () => {
 
       <div>
         <PageHeading title="+4 ans d'expériences" />
-        <Experiences />
+        {experiences &&
+          experiences.map((exp) => (
+            <Experiences key={exp.title} experience={exp} />
+          ))}
+        <Link to="/projects">
+          <div className="bg-secondary hover:bg-primary group flex items-center justify-between rounded-lg px-2 py-3">
+            <div className="flex flex-col gap-2">
+              <div className="text-md px-2 font-bold">
+                Voir tous les projets
+              </div>
+            </div>
+            <MoveRight className="group-hover:animate-fade-right mr-4" />
+          </div>
+        </Link>
       </div>
 
       <div>
         <PageHeading title="Compétences" />
-        <Tools tools={TOOLS} />
+        {TOOLS &&
+          TOOLS.map((tool, index) => (
+            <Tool key={`${tool}-${index}`} tool={tool} />
+          ))}
       </div>
 
       <div>
         <PageHeading title="Réalisations" />
-        <ProjectList />
+        {projects &&
+          projects.map((project) => (
+            <ProjectCard key={project.title} project={project} />
+          ))}
+        <Link to="/projects">
+          <div className="bg-secondary hover:bg-primary group flex items-center justify-between gap-2 rounded-lg px-2 py-3">
+            <div className="flex flex-col gap-2">
+              <div className="text-md px-2 font-bold">
+                Voir tous les projets
+              </div>
+            </div>
+            <MoveRight className="group-hover:animate-fade-right mr-4" />
+          </div>
+        </Link>
       </div>
     </div>
   )

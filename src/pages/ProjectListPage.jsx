@@ -13,14 +13,7 @@ const ProjectListPage = () => {
         <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
           {pro &&
             pro.map((project) => (
-              <ProjectCard
-                key={project.title}
-                title={project.title}
-                description={project.description}
-                image={project.image}
-                size={project.size}
-                link={project.link}
-              />
+              <ProjectCard key={project.title} project={project} />
             ))}
         </div>
       </div>
@@ -30,14 +23,7 @@ const ProjectListPage = () => {
         <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
           {other &&
             other.map((project) => (
-              <ProjectCard
-                key={project.title}
-                title={project.title}
-                description={project.description}
-                image={project.image}
-                size={project.size}
-                link={project.link}
-              />
+              <ProjectCard key={project.title} project={project} />
             ))}
         </div>
       </div>
