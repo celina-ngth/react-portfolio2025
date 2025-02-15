@@ -1,10 +1,11 @@
 import { Link, MapPin } from 'lucide-react'
+import portrait from '../assets/celina-ngeth.jpeg'
 
 const Sidebar = () => {
   return (
     <aside className="bg-secondary top-4 mb-4 flex h-fit w-full flex-col items-center gap-4 rounded-xl p-3 md:flex-row md:items-center lg:sticky lg:flex-col lg:p-4">
       <img
-        src="https://framerusercontent.com/images/H3gQyzjQNWcYB4RqhjHgnNIOI.png?scale-down-to=500"
+        src={portrait}
         alt="Célina Ngeth"
         className="w-full rounded-md object-cover md:w-[200px] lg:w-full"
       />

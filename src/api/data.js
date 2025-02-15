@@ -5,7 +5,7 @@ export const PROJECT_LIST = [
     dates: `2021 - aujourd'hui`,
     size: 'large',
     image:
-      'https://framerusercontent.com/images/0Mi0IWlbWJU3AYT2hGFzEwO4Ku8.png?scale-down-to=4096',
+      'https://images.pexels.com/photos/7130560/pexels-photo-7130560.jpeg?auto=compress&cs=tinysrgb&w=500&h=220&dpr=2',
     link: '/project/maisons-du-monde',
     type: 'pro',
   },
@@ -15,7 +15,7 @@ export const PROJECT_LIST = [
     dates: `Février 2021 - Septembre 2021 (8 mois)`,
     size: 'small',
     image:
-      'https://framerusercontent.com/images/0Mi0IWlbWJU3AYT2hGFzEwO4Ku8.png?scale-down-to=4096',
+      'https://images.pexels.com/photos/7130560/pexels-photo-7130560.jpeg?auto=compress&cs=tinysrgb&w=500&h=220&dpr=2',
     link: '/project/fiters',
     type: 'pro',
   },
@@ -24,7 +24,7 @@ export const PROJECT_LIST = [
     description: 'Site de vente de maisons',
     size: 'large',
     image:
-      'https://framerusercontent.com/images/0Mi0IWlbWJU3AYT2hGFzEwO4Ku8.png?scale-down-to=4096',
+      'https://images.pexels.com/photos/7130560/pexels-photo-7130560.jpeg?auto=compress&cs=tinysrgb&w=500&h=220&dpr=2',
     link: '/project/pomodoro-timer',
     type: 'other',
   },
@@ -33,7 +33,7 @@ export const PROJECT_LIST = [
     description: 'Site de vente de maisons',
     size: 'small',
     image:
-      'https://framerusercontent.com/images/0Mi0IWlbWJU3AYT2hGFzEwO4Ku8.png?scale-down-to=4096',
+      'https://images.pexels.com/photos/7130560/pexels-photo-7130560.jpeg?auto=compress&cs=tinysrgb&w=500&h=220&dpr=2',
     link: '/project/medium',
     type: 'other',
   },
@@ -42,7 +42,7 @@ export const PROJECT_LIST = [
     description: 'Site de vente de maisons',
     size: 'small',
     image:
-      'https://framerusercontent.com/images/0Mi0IWlbWJU3AYT2hGFzEwO4Ku8.png?scale-down-to=4096',
+      'https://images.pexels.com/photos/7130560/pexels-photo-7130560.jpeg?auto=compress&cs=tinysrgb&w=500&h=220&dpr=2',
     link: '/project/todo-app',
     type: 'other',
   },
@@ -71,7 +71,7 @@ export const PROJECTS_DETAILS = [
       `A/B tests avec Unleash et AB Tasty, suivi des performances avec Google Analytics et Tag Commander`,
     ],
     image:
-      'https://framerusercontent.com/images/0Mi0IWlbWJU3AYT2hGFzEwO4Ku8.png?scale-down-to=4096',
+      'https://images.pexels.com/photos/7130560/pexels-photo-7130560.jpeg?auto=compress&cs=tinysrgb&w=500&h=220&dpr=2',
   },
   {
     id: 'fiters',
@@ -88,7 +88,7 @@ export const PROJECTS_DETAILS = [
       `Collaboration client et suivi : échanges avec les clients pour comprendre leurs besoins, fournir des mises à jour`,
     ],
     image:
-      'https://framerusercontent.com/images/0Mi0IWlbWJU3AYT2hGFzEwO4Ku8.png?scale-down-to=4096',
+      'https://images.pexels.com/photos/7130560/pexels-photo-7130560.jpeg?auto=compress&cs=tinysrgb&w=500&h=220&dpr=2',
   },
 ]
 

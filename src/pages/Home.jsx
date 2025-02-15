@@ -32,15 +32,14 @@ const Home = () => {
 
       <div>
         <PageHeading title="+4 ans d'expériences" />
-        {experiences &&
-          experiences.map((exp) => (
-            <Experiences key={exp.title} experience={exp} />
-          ))}
-        <Link to="/projects">
+        {experiences?.map((exp) => (
+          <Experiences key={exp.title} experience={exp} />
+        ))}
+        <Link to="/experiences">
           <div className="bg-secondary hover:bg-primary group flex items-center justify-between rounded-lg px-2 py-3">
             <div className="flex flex-col gap-2">
               <div className="text-md px-2 font-bold">
-                Voir tous les projets
+                Voir les expériences et formations
               </div>
             </div>
             <MoveRight className="group-hover:animate-fade-right mr-4" />
@@ -50,18 +49,23 @@ const Home = () => {
 
       <div>
         <PageHeading title="Compétences" />
-        {TOOLS &&
-          TOOLS.map((tool, index) => (
+        <div className="flex flex-wrap gap-3">
+          {TOOLS?.map((tool, index) => (
             <Tool key={`${tool}-${index}`} tool={tool} />
           ))}
+        </div>
       </div>
 
-      <div>
-        <PageHeading title="Réalisations" />
-        {projects &&
-          projects.map((project) => (
-            <ProjectCard key={project.title} project={project} />
-          ))}
+      <div className="flex flex-col gap-4">
+        <div>
+          <PageHeading title="Réalisations" />
+          <div className="grid gap-4 md:grid-flow-col md:grid-rows-2">
+            {projects?.map((project) => (
+              <ProjectCard key={project.title} project={project} />
+            ))}
+          </div>
+        </div>
+
         <Link to="/projects">
           <div className="bg-secondary hover:bg-primary group flex items-center justify-between gap-2 rounded-lg px-2 py-3">
             <div className="flex flex-col gap-2">
