@@ -3,10 +3,10 @@ const Experience = ({ experience }) => {
     <div>
       {experience && (
         <div className="mb-4 flex justify-between" key={experience.title}>
-          <div className="text-lg">{experience.title}</div>
-          <div className="flex flex-col gap-2 text-right">
-            <div>{experience.job}</div>
-            <div>{experience.dates}</div>
+          <h5 className="text-md font-semibold">{experience.title}</h5>
+          <div className="flex min-w-40 flex-col text-right">
+            <p>{experience.job}</p>
+            <p>{experience.dates}</p>
           </div>
         </div>
       )}

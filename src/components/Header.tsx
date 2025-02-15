@@ -11,13 +11,13 @@ const Header = () => {
 
         <div className="flex flex-col gap-2 text-sm md:flex-row md:gap-4">
           <Link to={'/projects'}>
-            <div>projets</div>
+            <div>Projets</div>
           </Link>
           <Link to={'/experiences'}>
-            <div>expériences et formations</div>
+            <div>Expériences et formations</div>
           </Link>
           <Link to={'/contact'}>
-            <div>contact</div>
+            <div>Contact</div>
           </Link>
         </div>
       </div>

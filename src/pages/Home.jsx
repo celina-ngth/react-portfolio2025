@@ -14,17 +14,17 @@ const Home = () => {
     <div className="flex w-full flex-col gap-8">
       <div>
         <PageHeading
-          title="Software engineer"
+          title="Développeuse front-end JS"
           description="Développeuse front-end JavaScript depuis plus de 4 ans, je suis dotée d’une sensibilité graphique tirée de mes études de design et je bénéficie de 3 ans d’expériences précédentes en temps que Product Owner. J’accorde depuis, une attention particulière à l’expérience utilisateur et à la qualité des interfaces, pour créer des produits aussi fonctionnels que solides techniquement.
           Mon état d’esprit : apprendre chaque jour, trouver des solutions et toujours m’améliorer 💪"
         />
         <section className="flex gap-4">
-          <div>
-            <p className="text-lg font-semibold">+4 ans</p>
+          <div className="bg-secondary rounded-lg p-3">
+            <p className="text-md font-semibold">+4 ans</p>
             <p>d&apos;expérience front-end</p>
           </div>
-          <div>
-            <p className="text-lg font-semibold">3 ans</p>
+          <div className="bg-secondary rounded-lg p-3">
+            <p className="text-md font-semibold">3 ans</p>
             <p>de product ownership</p>
           </div>
         </section>
@@ -37,9 +37,9 @@ const Home = () => {
             <Experiences key={exp.title} experience={exp} />
           ))}
           <Link to="/experiences">
-            <div className="group flex items-center gap-3 rounded-lg hover:text-pink-200">
-              Voir les expériences et formations
-              <MoveRight className="group-hover:animate-fade-right h-3 w-3 hover:text-pink-200" />
+            <div className="group hover:text-dark flex items-center gap-3 rounded-lg">
+              Toutes les expériences et formations
+              <MoveRight className="group-hover:animate-fade-right hover:text-dark h-3 w-3" />
             </div>
           </Link>
         </div>
@@ -47,10 +47,16 @@ const Home = () => {
 
       <div>
         <PageHeading title="Compétences" />
-        <div className="flex flex-wrap gap-3">
-          {TOOLS?.map((tool, index) => (
+        <div className="flex flex-wrap items-center gap-3">
+          {TOOLS.slice(0, 10)?.map((tool, index) => (
             <Tool key={`${tool}-${index}`} tool={tool} />
           ))}
+          <Link to="/experiences">
+            <div className="group hover:text-dark flex items-center gap-3 rounded-lg">
+              Toutes les compétences
+              <MoveRight className="group-hover:animate-fade-right hover:text-dark h-3 w-3" />
+            </div>
+          </Link>
         </div>
       </div>
 
@@ -65,9 +71,9 @@ const Home = () => {
         </div>
 
         <Link to="/projects">
-          <div className="group flex items-center gap-3 rounded-lg hover:text-pink-200">
-            Voir tous les projets
-            <MoveRight className="group-hover:animate-fade-right h-3 w-3 hover:text-pink-200" />
+          <div className="group hover:text-dark flex items-center gap-3 rounded-lg">
+            Tous les projets
+            <MoveRight className="group-hover:animate-fade-right hover:text-dark h-3 w-3" />
           </div>
         </Link>
       </div>
