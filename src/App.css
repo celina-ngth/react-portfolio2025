@@ -3,10 +3,10 @@
 
 @theme {
   --color-light: #fff;
-  --color-dark: #000;
-  --color-primary: #1c1917;
-  --color-secondary: #292524;
-  --color-neutral: #fafaf9;
+  --color-dark: #848382;
+  --color-primary: #fafaf9;
+  --color-secondary: #f5f5f4;
+  --color-neutral: #292524;
   --color-standard: #f5f5f4;
 
   --spacing-1: 2px;
@@ -36,11 +36,11 @@
 
 @layer components {
     h1 {
-      font-weight: bold;
+      font-weight: semibold;
     }
 
     h2 {
-      font-weight: bold;
+      font-weight: semibold;
     }
 }
 

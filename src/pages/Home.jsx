@@ -20,18 +20,18 @@ const Home = () => {
         />
         <section className="flex gap-4">
           <div>
-            <p className="text-lg font-bold">4 ans</p>
+            <p className="text-lg font-semibold">+4 ans</p>
             <p>d&apos;expérience front-end</p>
           </div>
           <div>
-            <p className="text-lg font-bold">3 ans</p>
+            <p className="text-lg font-semibold">3 ans</p>
             <p>de product ownership</p>
           </div>
         </section>
       </div>
 
       <div>
-        <PageHeading title="+4 ans d'expériences" />
+        <PageHeading title="Expériences et formations" />
         <div className="flex flex-col gap-4 divide-y divide-gray-200">
           {experiences?.map((exp) => (
             <Experiences key={exp.title} experience={exp} />

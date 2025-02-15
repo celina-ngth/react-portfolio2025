@@ -3,9 +3,9 @@ const Experience = ({ experience }) => {
     <div>
       {experience && (
         <div className="mb-4 flex justify-between" key={experience.title}>
-          <div className="text-lg font-bold">{experience.title}</div>
+          <div className="text-lg">{experience.title}</div>
           <div className="flex flex-col gap-2 text-right">
-            <div className="font-bold">{experience.job}</div>
+            <div>{experience.job}</div>
             <div>{experience.dates}</div>
           </div>
         </div>

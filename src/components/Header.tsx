@@ -6,20 +6,18 @@ const Header = () => {
     <header className="w-full border-b pb-4">
       <div className="container mx-auto flex h-16 items-center justify-between lg:px-4">
         <Link to={'/'}>
-          <div className="text-xl font-bold tracking-tight">Célina Ngeth.</div>
+          <h1 className="text-xl tracking-tight">Célina Ngeth.</h1>
         </Link>
 
-        <div className="flex flex-col gap-2 md:flex-row md:gap-4">
+        <div className="flex flex-col gap-2 text-sm md:flex-row md:gap-4">
           <Link to={'/projects'}>
-            <div className="text-sm font-semibold tracking-tight">projets</div>
+            <div>projets</div>
           </Link>
           <Link to={'/experiences'}>
-            <div className="text-sm font-semibold tracking-tight">
-              expériences et formations
-            </div>
+            <div>expériences et formations</div>
           </Link>
           <Link to={'/contact'}>
-            <div className="text-sm font-semibold tracking-tight">contact</div>
+            <div>contact</div>
           </Link>
         </div>
       </div>
