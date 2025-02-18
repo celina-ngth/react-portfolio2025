@@ -1,63 +1,14 @@
-export const PROJECT_LIST = [
-  {
-    title: 'Maisons du Monde',
-    job: 'Ingénieure front-end Vue 3',
-    description: 'Site de vente de maisons',
-    dates: `2021 - aujourd'hui`,
-    size: 'large',
-    image:
-      'https://images.pexels.com/photos/7130560/pexels-photo-7130560.jpeg?auto=compress&cs=tinysrgb&w=500&h=220&dpr=2',
-    link: '/project/maisons-du-monde',
-    type: 'pro',
-  },
-  {
-    title: 'Fiters',
-    job: 'Développeuse full-stack JS',
-    description: 'Site de vente de maisons',
-    dates: `Février 2021 - Septembre 2021 (8 mois)`,
-    size: 'small',
-    image:
-      'https://images.pexels.com/photos/7130560/pexels-photo-7130560.jpeg?auto=compress&cs=tinysrgb&w=500&h=220&dpr=2',
-    link: '/project/fiters',
-    type: 'pro',
-  },
-  {
-    title: 'Pomodoro timer',
-    description: 'Site de vente de maisons',
-    size: 'large',
-    image:
-      'https://images.pexels.com/photos/7130560/pexels-photo-7130560.jpeg?auto=compress&cs=tinysrgb&w=500&h=220&dpr=2',
-    link: '/project/pomodoro-timer',
-    type: 'other',
-  },
-  {
-    title: 'Medium like',
-    description: 'Site de vente de maisons',
-    size: 'small',
-    image:
-      'https://images.pexels.com/photos/7130560/pexels-photo-7130560.jpeg?auto=compress&cs=tinysrgb&w=500&h=220&dpr=2',
-    link: '/project/medium',
-    type: 'other',
-  },
-  {
-    title: 'Todo app',
-    description: 'Site de vente de maisons',
-    size: 'small',
-    image:
-      'https://images.pexels.com/photos/7130560/pexels-photo-7130560.jpeg?auto=compress&cs=tinysrgb&w=500&h=220&dpr=2',
-    link: '/project/todo-app',
-    type: 'other',
-  },
-]
-
 export const PROJECTS_DETAILS = [
   {
     id: 'maisons-du-monde',
+    type: 'pro',
     job: 'Ingénieure front-end Vue 3',
     title: 'Maisons du Monde',
+    link: '/project/maisons-du-monde',
     dates: `2021 - aujourd'hui`,
     context: 'Refonte du site e-commerce Maisons du Monde',
     description: 'Refonte du site e-commerce Maisons du Monde',
+    size: 'large',
     list: [
       `Refonte front-end et back-for-front en SSR avec Vue 3 composition API, TypeScript, Node, Koa, Tailwind, GraphQL`,
       `Maintenance évolutive : amélioration continue du site pour répondre aux enjeux commerciaux`,
@@ -74,15 +25,28 @@ export const PROJECTS_DETAILS = [
     ],
     image:
       'https://images.pexels.com/photos/7130560/pexels-photo-7130560.jpeg?auto=compress&cs=tinysrgb&w=500&h=220&dpr=2',
+    stack: [
+      'Vue 3',
+      'Node.js',
+      'Tailwind CSS',
+      'GraphQL',
+      'Prismic CMS',
+      'Vitest',
+      'Vite',
+      'New Relic',
+    ],
   },
   {
     id: 'fiters',
+    type: 'pro',
     job: 'Développeuse full-stack JS',
     title: 'Fiters',
+    link: '/project/fiters',
     dates: `février 2021 - septembre 2021 (8 mois)`,
     context:
       'Fiters est une entreprise qui propose des solutions et programmes de coaching sportif en entreprise',
     description: 'Refonte du site e-commerce Maisons du Monde',
+    size: 'small',
     list: [
       `Refonte du site vitrine : utilisation de Vue 2 avec Quasar pour le front-end et Node.js et Firebase pour le développement back-end et la gestion de la base de données en temps réel`,
       `Développement de trois webapps dédiées : application destinée aux coachs sportifs, tableau de bord pour les entreprises clientes, et application destinée aux collaborateurs des entreprises`,
@@ -91,6 +55,59 @@ export const PROJECTS_DETAILS = [
     ],
     image:
       'https://images.pexels.com/photos/7130560/pexels-photo-7130560.jpeg?auto=compress&cs=tinysrgb&w=500&h=220&dpr=2',
+    stack: ['Vue 2', 'Node.js', 'Firebase', 'Headless CMS Contentful '],
+  },
+  {
+    id: 'bnp-paribas',
+    type: 'pro',
+    job: 'Product owner',
+    title: 'BNP Paribas',
+    link: '/project/bnp-paribas',
+    dates: `octobre 2016 - mars 2020 (3 ans et demi)`,
+    context:
+      'Contexte : développement d’un intranet destiné à l’ensemble du Groupe BNP Paribas (280k collaborateurs)',
+    description: 'Refonte du site e-commerce Maisons du Monde',
+    size: 'small',
+    list: [],
+    image:
+      'https://images.pexels.com/photos/7130560/pexels-photo-7130560.jpeg?auto=compress&cs=tinysrgb&w=500&h=220&dpr=2',
+    stack: ['Vue 2', 'Node.js', 'Firebase', 'Headless CMS Contentful '],
+  },
+  {
+    id: 'pomodoro-timer',
+    type: 'other',
+    title: 'Pomodoro timer',
+    link: '/project/pomodoro-timer',
+    description:
+      'Pomodoro timer est une application de pomodoro en ligne qui permet de travailler en mode pomodoro',
+    image:
+      'https://images.pexels.com/photos/7130560/pexels-photo-7130560.jpeg?auto=compress&cs=tinysrgb&w=500&h=220&dpr=2',
+    size: 'large',
+    stack: ['React', 'Typescript', 'Tailwind'],
+  },
+  {
+    id: 'medium',
+    type: 'other',
+    title: 'Medium',
+    link: '/project/medium',
+    description:
+      'Pomodoro timer est une application de pomodoro en ligne qui permet de travailler en mode pomodoro',
+    image:
+      'https://images.pexels.com/photos/7130560/pexels-photo-7130560.jpeg?auto=compress&cs=tinysrgb&w=500&h=220&dpr=2',
+    size: 'small',
+    stack: ['React', 'Typescript', 'Tailwind'],
+  },
+  {
+    id: 'todo-app',
+    type: 'other',
+    title: 'Todo app',
+    link: '/project/todo-app',
+    description:
+      'Pomodoro timer est une application de pomodoro en ligne qui permet de travailler en mode pomodoro',
+    image:
+      'https://images.pexels.com/photos/7130560/pexels-photo-7130560.jpeg?auto=compress&cs=tinysrgb&w=500&h=220&dpr=2',
+    size: 'small',
+    stack: ['React', 'Typescript', 'Tailwind'],
   },
 ]
 

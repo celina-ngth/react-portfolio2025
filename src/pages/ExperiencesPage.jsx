@@ -3,12 +3,14 @@ import PageHeading from '../components/PageHeading'
 import Experiences from '../components/ExperienceCard'
 
 const ExperiencesPage = () => {
+  const projects = PROJECTS_DETAILS.filter((project) => project.type === 'pro')
+
   return (
     <div className="flex flex-col gap-8">
       <div>
         <PageHeading title="Expériences" />
         <div className="flex flex-col gap-4 divide-y divide-gray-200">
-          {PROJECTS_DETAILS.map((exp) => (
+          {projects.map((exp) => (
             <Experiences key={exp.title} experience={exp} />
           ))}
         </div>

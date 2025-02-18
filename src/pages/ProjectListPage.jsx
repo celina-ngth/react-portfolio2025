@@ -1,10 +1,10 @@
 import PageHeading from '../components/PageHeading'
 import ProjectCard from '../components/ProjectCard'
-import { PROJECT_LIST } from '../api/data'
+import { PROJECTS_DETAILS } from '../api/data'
 
 const ProjectListPage = () => {
-  const pro = PROJECT_LIST.filter((project) => project.type === 'pro')
-  const other = PROJECT_LIST.filter((project) => project.type === 'other')
+  const pro = PROJECTS_DETAILS.filter((project) => project.type === 'pro')
+  const other = PROJECTS_DETAILS.filter((project) => project.type === 'other')
 
   return (
     <>

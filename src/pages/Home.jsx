@@ -4,17 +4,21 @@ import Experiences from '../components/ExperienceCard'
 import ProjectCard from '../components/ProjectCard'
 import { MoveRight } from 'lucide-react'
 import { Link } from 'react-router-dom'
-import { TOOLS, PROJECT_LIST } from '../api/data'
+import { TOOLS, PROJECTS_DETAILS } from '../api/data'
 
 const Home = () => {
-  const experiences = PROJECT_LIST.filter((project) => project.type === 'pro')
-  const projects = PROJECT_LIST.filter((project) => project.type === 'other')
+  const experiences = PROJECTS_DETAILS.filter(
+    (project) => project.type === 'pro',
+  ).slice(0, 2)
+  const projects = PROJECTS_DETAILS.filter(
+    (project) => project.type === 'other',
+  )
 
   return (
     <div className="flex w-full flex-col gap-8">
       <div>
         <PageHeading
-          title="Développeuse front-end JS"
+          title="Je suis une développeuse front-end JS"
           description="Développeuse front-end JavaScript depuis plus de 4 ans, je suis dotée d’une sensibilité graphique tirée de mes études de design et je bénéficie de 3 ans d’expériences précédentes en temps que Product Owner. J’accorde depuis, une attention particulière à l’expérience utilisateur et à la qualité des interfaces, pour créer des produits aussi fonctionnels que solides techniquement.
           Mon état d’esprit : apprendre chaque jour, trouver des solutions et toujours m’améliorer 💪"
         />
