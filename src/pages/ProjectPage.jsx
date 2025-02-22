@@ -10,7 +10,7 @@ const ProjectPage = () => {
   const project = PROJECTS_DETAILS.find((project) => project.id === id)
 
   return (
-    <>
+    <div className="container px-4">
       <Link to="/projects">
         <div className="group hover:text-dark mb-3 flex items-center gap-3 rounded-lg">
           <MoveLeft className="group-hover:animate-fade-left hover:text-dark h-3 w-3" />
@@ -25,7 +25,7 @@ const ProjectPage = () => {
 
           {project.dates && <p>{project.dates}</p>}
 
-          {project.context && <p>{project.context}</p>}
+          {project.context && <p>Contexte : {project.context}</p>}
           {project.description && <p>{project.description}</p>}
 
           {project.list && (
@@ -42,7 +42,7 @@ const ProjectPage = () => {
           </div>
         </div>
       )}
-    </>
+    </div>
   )
 }
 

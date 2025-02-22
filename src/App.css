@@ -3,11 +3,11 @@
 
 @theme {
   --color-light: #fff;
-  --color-dark: #848382;
+  --color-dark: #292725;
   --color-primary: #fafaf9;
-  --color-secondary: #f5f5f4;
+  --color-secondary: #efedeb;
   --color-neutral: #444;
-  --color-standard: #f5f5f4;
+  --color-neutral-light: #9b9894;
 
   --spacing-1: 2px;
   --spacing-2: 8px;
@@ -16,7 +16,9 @@
   --spacing-5: 32px;
   --spacing-6: 48px;
   --spacing-7: 64px;
-  --spacing-8: 72px;
+  --spacing-8: 80px;
+  --spacing-9: 96px;
+  --spacing-10: 112px;
 
   --text-xs: 0.75rem;
   --text-sm: 1rem;
@@ -45,7 +47,6 @@
 }
 
 body {
-  background-color: var(--color-primary);
   color: var(--color-neutral);
   font-size: 1.1rem;
   line-height: 2rem;
@@ -53,7 +54,10 @@ body {
 }
 
 #root {
-  max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
 }

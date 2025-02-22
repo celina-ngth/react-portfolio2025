@@ -1,24 +1,16 @@
 import Header from '../components/Header'
 import React from 'react'
-import Sidebar from '../components/Sidebar'
-
 const Layout = ({ children }) => {
   return (
     <>
       <Header />
 
-      <main className="container mx-auto min-h-screen py-4 lg:px-4">
-        <div className="gap-6 lg:grid lg:grid-cols-3 lg:py-4">
-          <div className="col-span-1">
-            <Sidebar />
-          </div>
-
-          <div className="col-span-2 w-full">{children}</div>
-        </div>
+      <main className="mx-auto mb-10 min-h-screen">
+        <div className="col-span-2 w-full">{children}</div>
       </main>
 
-      <footer className="border-t backdrop-blur">
-        <div className="container mx-auto flex justify-center pt-4 text-gray-400">
+      <footer className="border-neutral-light mt-10 border-t py-4">
+        <div className="text-neutral-light container flex justify-center px-4">
           made with ❤️
         </div>
       </footer>

@@ -7,7 +7,7 @@ const ProjectListPage = () => {
   const other = PROJECTS_DETAILS.filter((project) => project.type === 'other')
 
   return (
-    <>
+    <div className="container px-4">
       <div className="pb-8">
         <PageHeading title="Projets professionnels" />
         <div className="grid gap-4 md:grid-flow-col md:grid-rows-2">
@@ -25,7 +25,7 @@ const ProjectListPage = () => {
           ))}
         </div>
       </div>
-    </>
+    </div>
   )
 }
 

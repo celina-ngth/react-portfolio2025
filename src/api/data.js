@@ -2,7 +2,7 @@ export const PROJECTS_DETAILS = [
   {
     id: 'maisons-du-monde',
     type: 'pro',
-    job: 'Ingénieure front-end Vue 3',
+    job: 'Développeuse front-end Vue 3',
     title: 'Maisons du Monde',
     link: '/project/maisons-du-monde',
     dates: `2021 - aujourd'hui`,
@@ -78,8 +78,7 @@ export const PROJECTS_DETAILS = [
     type: 'other',
     title: 'Pomodoro timer',
     link: '/project/pomodoro-timer',
-    description:
-      'Pomodoro timer est une application de pomodoro en ligne qui permet de travailler en mode pomodoro',
+    description: 'Un timer basé sur la méthode Pomodoro',
     image:
       'https://images.pexels.com/photos/7130560/pexels-photo-7130560.jpeg?auto=compress&cs=tinysrgb&w=500&h=220&dpr=2',
     size: 'large',
@@ -90,8 +89,7 @@ export const PROJECTS_DETAILS = [
     type: 'other',
     title: 'Medium',
     link: '/project/medium',
-    description:
-      'Pomodoro timer est une application de pomodoro en ligne qui permet de travailler en mode pomodoro',
+    description: 'Copycat du site Medium',
     image:
       'https://images.pexels.com/photos/7130560/pexels-photo-7130560.jpeg?auto=compress&cs=tinysrgb&w=500&h=220&dpr=2',
     size: 'small',
@@ -102,8 +100,7 @@ export const PROJECTS_DETAILS = [
     type: 'other',
     title: 'Todo app',
     link: '/project/todo-app',
-    description:
-      'Pomodoro timer est une application de pomodoro en ligne qui permet de travailler en mode pomodoro',
+    description: 'Juste une autre todo app',
     image:
       'https://images.pexels.com/photos/7130560/pexels-photo-7130560.jpeg?auto=compress&cs=tinysrgb&w=500&h=220&dpr=2',
     size: 'small',
@@ -153,25 +150,88 @@ export const FORMATIONS = [
 ]
 
 export const TOOLS = [
-  'Vue3 Composition API',
-  'React',
-  'Typescript',
-  'JavaScript',
-  'NextJS',
-  'Tailwind',
-  'Design System',
-  'Vitest',
-  'TDD',
-  'GraphQL',
-  'Urql',
-  'API Rest',
-  'Pinia',
-  'VueX',
-  'Méthode Agile Scrum',
-  'Storybook',
-  'Histoire',
-  'Architecture microservice',
-  'Nuxt',
-  'Git',
-  'Prismic',
+  {
+    name: 'Vue3 Composition API',
+    type: 'Framework',
+  },
+  {
+    name: 'React',
+    type: 'Framework',
+  },
+  {
+    name: 'Typescript',
+    type: 'Langage',
+  },
+  {
+    name: 'JavaScript',
+    type: 'Langage',
+  },
+  {
+    name: 'NextJS',
+    type: 'Framework',
+  },
+  {
+    name: 'Tailwind',
+    type: 'Framework CSS',
+  },
+  {
+    name: 'Design System',
+    type: 'Design',
+  },
+  {
+    name: 'Vitest',
+    type: 'Tests',
+  },
+  {
+    name: 'TDD',
+    type: 'Méthodologie',
+  },
+  {
+    name: 'GraphQL',
+    type: 'API',
+  },
+  {
+    name: 'Urql',
+    type: 'API',
+  },
+  {
+    name: 'API Rest',
+    type: 'API',
+  },
+  {
+    name: 'Pinia',
+    type: 'State management',
+  },
+  {
+    name: 'VueX',
+    type: 'State management',
+  },
+  {
+    name: 'Méthode Agile Scrum',
+    type: 'Méthodologie',
+  },
+  {
+    name: 'Storybook',
+    type: 'Visualisation de composants UI',
+  },
+  {
+    name: 'Histoire',
+    type: 'Visualisation de composants UI',
+  },
+  {
+    name: 'Architecture microservice',
+    type: 'API',
+  },
+  {
+    name: 'Nuxt',
+    type: 'Framework',
+  },
+  {
+    name: 'Git',
+    type: 'Versionning',
+  },
+  {
+    name: 'Prismic',
+    type: 'Headless CMS',
+  },
 ]

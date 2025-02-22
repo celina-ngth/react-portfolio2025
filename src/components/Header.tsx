@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom'
 
 const Header = () => {
   return (
-    <header className="w-full border-b pb-4">
-      <div className="container mx-auto flex h-16 items-center justify-between lg:px-4">
+    <header className="border-neutral-light w-full border-b py-4">
+      <div className="container flex h-16 items-center justify-between px-4">
         <Link to={'/'}>
           <h1 className="text-xl tracking-tight">Célina</h1>
         </Link>
@@ -13,8 +13,8 @@ const Header = () => {
           <Link to={'/projects'}>
             <div>Projets</div>
           </Link>
-          <Link to={'/experiences'}>
-            <div>Expériences et formations</div>
+          <Link to={'/about'}>
+            <div>Profil</div>
           </Link>
           <Link to={'/contact'}>
             <div>Contact</div>
