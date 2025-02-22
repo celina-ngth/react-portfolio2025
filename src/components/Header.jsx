@@ -1,12 +1,12 @@
-import React from 'react'
 import { Link } from 'react-router-dom'
+import PageHeading from './PageHeading'
 
 const Header = () => {
   return (
     <header className="border-neutral-light w-full border-b py-4">
       <div className="container flex h-16 items-center justify-between px-4">
         <Link to={'/'}>
-          <h1 className="text-xl tracking-tight">Célina</h1>
+          <PageHeading title="Célina" />
         </Link>
 
         <div className="flex flex-col gap-2 text-sm md:flex-row md:gap-4">
