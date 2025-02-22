@@ -2,8 +2,8 @@ export const PROJECTS_DETAILS = [
   {
     id: 'maisons-du-monde',
     type: 'pro',
-    job: 'Développeuse front-end Vue 3',
-    title: 'Maisons du Monde',
+    title: 'Développeuse front-end Vue 3',
+    company: 'Maisons du Monde',
     link: '/project/maisons-du-monde',
     dates: `2021 - aujourd'hui`,
     context: 'Refonte du site e-commerce Maisons du Monde',
@@ -39,8 +39,8 @@ export const PROJECTS_DETAILS = [
   {
     id: 'fiters',
     type: 'pro',
-    job: 'Développeuse full-stack JS',
-    title: 'Fiters',
+    title: 'Développeuse full-stack JS',
+    company: 'Fiters',
     link: '/project/fiters',
     dates: `février 2021 - septembre 2021 (8 mois)`,
     context:
@@ -60,9 +60,9 @@ export const PROJECTS_DETAILS = [
   {
     id: 'bnp-paribas',
     type: 'pro',
-    job: 'Product owner',
-    title: 'BNP Paribas',
-    link: '/project/bnp-paribas',
+    title: 'Product owner',
+    company: 'BNP Paribas',
+    link: '',
     dates: `octobre 2016 - mars 2020 (3 ans et demi)`,
     context:
       'Contexte : développement d’un intranet destiné à l’ensemble du Groupe BNP Paribas (280k collaborateurs)',
@@ -71,7 +71,22 @@ export const PROJECTS_DETAILS = [
     list: [],
     image:
       'https://images.pexels.com/photos/7130560/pexels-photo-7130560.jpeg?auto=compress&cs=tinysrgb&w=500&h=220&dpr=2',
-    stack: ['Vue 2', 'Node.js', 'Firebase', 'Headless CMS Contentful '],
+    stack: [],
+  },
+  {
+    id: 'bnp-paribas-webdesigner',
+    type: 'pro',
+    title: 'Webdesigner, alternance',
+    company: 'BNP Paribas',
+    link: '',
+    dates: `Octobre 2014 à Septembre 2016 (2 ans)`,
+    context: '',
+    description: 'Refonte du site e-commerce Maisons du Monde',
+    size: 'small',
+    list: [],
+    image:
+      'https://images.pexels.com/photos/7130560/pexels-photo-7130560.jpeg?auto=compress&cs=tinysrgb&w=500&h=220&dpr=2',
+    stack: [],
   },
   {
     id: 'pomodoro-timer',
@@ -110,42 +125,34 @@ export const PROJECTS_DETAILS = [
 
 export const EDUCATION = [
   {
-    title: `Concepteur développeur d'applications`,
-    school: 'Afpa',
-    dates: '2020 - 2021',
-  },
-  {
-    title: 'Master Cultures et Métiers du Web',
-    school: 'Université Gustave Eiffel',
-    dates: '2014 - 2016',
-  },
-  {
-    title: 'Licence professionnelle Infographie et Webdesign',
-    school: 'Université Sorbonne Paris Nord',
-    dates: '2013 - 2014',
-  },
-  {
-    title: 'BTS Communication et Industries graphiques',
-    school: 'École Estienne',
-    dates: '2011 - 2013',
-  },
-]
-
-export const FORMATIONS = [
-  {
     title: 'Software craftsmanship TDD',
-    school: 'Human Coders',
+    company: 'Human Coders',
     dates: '2024',
   },
   {
     title: 'Vue3 Composition API avancé',
-    school: 'Université Gustave Eiffel',
+    company: 'Human Coders',
     dates: '2023',
   },
   {
+    title: `Concepteur développeur d'applications`,
+    company: 'Afpa',
+    dates: '2020 - 2021',
+  },
+  {
     title: 'Agile Scrum',
-    school: 'Esic',
+    company: 'Esic',
     dates: '2018',
+  },
+  {
+    title: 'Master Cultures et Métiers du Web',
+    company: 'Université Gustave Eiffel',
+    dates: '2014 - 2016',
+  },
+  {
+    title: 'Licence Infographie et Webdesign',
+    company: 'Université Sorbonne Paris Nord',
+    dates: '2011 - 2014',
   },
 ]
 

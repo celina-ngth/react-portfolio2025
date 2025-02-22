@@ -1,29 +1,27 @@
 import Button from './ui/Button'
-import celina from '../assets/celina-ngeth.jpeg'
+import PageHeading from './PageHeading'
+import { Link } from 'react-router-dom'
 
-const Hero = () => {
+const AboutText = () => {
   return (
-    <div className="bg-secondary py-4 lg:py-10">
-      <div className="container flex w-full flex-col gap-4 p-4 lg:flex-row lg:gap-8">
-        <div className="w-full lg:w-1/2">
-          <img
-            style={{
-              borderRadius: '60% 40% 63% 45%',
-              width: '300px',
-              height: '280px',
-              objectFit: 'cover',
-            }}
-            src={celina}
-            alt=""
-          />
+    <div className="bg-secondary py-4 lg:py-8">
+      <div className="container grid grid-cols-3 gap-4 p-4 lg:flex-row lg:gap-8">
+        <div className="col-span-1">
+          <PageHeading title="À propos" />
+          <Link to={'/contact'}>
+            <div>Contact</div>
+          </Link>
+          <Link to={'/contact'}>
+            <div>CV</div>
+          </Link>
         </div>
 
-        <div className="flex w-full flex-col gap-4">
+        <div className="col-span-2 flex w-full flex-col gap-4">
           <p className="text-lg">
             Mon état d’esprit : apprendre chaque jour, trouver des solutions et
             toujours m’améliorer 💪
           </p>
-          <p>
+          <p className="columns-2">
             Développeuse front-end JavaScript depuis plus de 4 ans, je suis
             dotée d’une sensibilité graphique tirée de mes études de design et
             je bénéficie de 3 ans d’expériences précédentes en temps que Product
@@ -42,4 +40,4 @@ const Hero = () => {
   )
 }
 
-export default Hero
+export default AboutText

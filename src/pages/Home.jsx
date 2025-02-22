@@ -1,13 +1,15 @@
 import PageHeading from '../components/PageHeading'
 import Tool from '../components/Tool'
-import About from '../components/About'
+import AboutHome from '../components/AboutHome'
 import ProjectCard from '../components/ProjectCard'
 import Hero from '../components/Hero'
 import Link from '../components/ui/Link'
 import { TOOLS, PROJECTS_DETAILS } from '../api/data'
 
 const Home = () => {
-  const projects = PROJECTS_DETAILS.filter((project) => project.type === 'pro')
+  const projects = PROJECTS_DETAILS.filter(
+    (project) => project.type === 'pro',
+  ).slice(0, 3)
 
   return (
     <>
@@ -24,10 +26,13 @@ const Home = () => {
           <Link to="/projects" title="Tous les projets" />
         </div>
 
-        <About />
+        <AboutHome />
 
         <div className="container px-4">
-          <PageHeading title="Compétences" />
+          <PageHeading
+            title="Compétences"
+            description="Langages, frameworks, méthodo, outils et autres"
+          />
           <div className="flex flex-wrap items-center gap-3">
             {TOOLS?.map((tool, index) => (
               <Tool key={`${tool}-${index}`} tool={tool.name} />
