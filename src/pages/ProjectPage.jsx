@@ -56,7 +56,7 @@ const ProjectPage = () => {
             <PageHeading title={project.title} center />
           </div>
 
-          <div className="grid items-baseline gap-6 lg:grid-cols-8">
+          <div className="grid items-baseline gap-4 lg:grid-cols-8">
             <div className="flex flex-col gap-6 lg:col-span-2">
               {project.dates && (
                 <div>
@@ -102,7 +102,7 @@ const ProjectPage = () => {
               </div>
             </div>
 
-            <div className="flex flex-col gap-6 lg:col-span-6 lg:pl-8">
+            <div className="flex flex-col gap-6 lg:col-span-6 lg:pl-10">
               {project.context && (
                 <div>
                   <h4 className="text-neutral-light mb-2 text-sm font-semibold uppercase">

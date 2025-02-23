@@ -6,7 +6,7 @@ export const PROJECTS_DETAILS = [
     company: 'Maisons du Monde',
     link: '/project/maisons-du-monde',
     externalLink: {
-      cta: 'Site',
+      cta: 'maisonsdumonde.com',
       link: 'https://www.maisonsdumonde.com/',
     },
     dates: `2021 - Aujourd'hui`,
@@ -50,8 +50,8 @@ export const PROJECTS_DETAILS = [
     company: 'Fiters',
     link: '/project/fiters',
     externalLink: {
-      cta: 'Site',
-      link: 'https://www.fiters.com/',
+      cta: 'fiters.co',
+      link: 'https://www.fiters.co/',
     },
     dates: `Février 2021 à septembre 2021 (8 mois)`,
     context: 'Refonte du site vitrine et développement sur les 3 webapps',
