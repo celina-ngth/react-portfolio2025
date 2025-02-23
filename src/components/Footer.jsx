@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom'
 import PageHeading from './PageHeading'
+import CV from '../assets/cv_celina-ngeth.pdf'
+import { Download } from 'lucide-react'
 
 const Footer = () => {
   return (
@@ -19,9 +21,11 @@ const Footer = () => {
             <Link to={'/contact'}>
               <div>Contact</div>
             </Link>
-            <Link to={'/contact'}>
-              <div>CV</div>
-            </Link>
+            <a href={CV} target="_blank">
+              <div className="flex items-center gap-2">
+                CV <Download className="h-3 w-3" />
+              </div>
+            </a>
           </div>
 
           <div className="flex flex-col gap-2 md:gap-3">

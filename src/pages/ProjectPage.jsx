@@ -47,10 +47,17 @@ const ProjectPage = () => {
             </div>
           )}
 
-          <PageHeading title={project.title} />
+          <div className="pt-3 text-center md:py-6">
+            {project.company && (
+              <h3 className="text-neutral-light text-lg md:pb-3">
+                {project.company}
+              </h3>
+            )}
+            <PageHeading title={project.title} center />
+          </div>
 
-          <div className="grid items-baseline lg:grid-cols-8 lg:gap-6">
-            <div className="flex flex-col lg:col-span-2 lg:gap-6">
+          <div className="grid items-baseline gap-6 lg:grid-cols-8">
+            <div className="flex flex-col gap-6 lg:col-span-2">
               {project.dates && (
                 <div>
                   <h4 className="text-neutral-light mb-2 text-sm font-semibold uppercase">
@@ -95,7 +102,7 @@ const ProjectPage = () => {
               </div>
             </div>
 
-            <div className="flex flex-col lg:col-span-6 lg:gap-6 lg:pl-8">
+            <div className="flex flex-col gap-6 lg:col-span-6 lg:pl-8">
               {project.context && (
                 <div>
                   <h4 className="text-neutral-light mb-2 text-sm font-semibold uppercase">
@@ -131,7 +138,7 @@ const ProjectPage = () => {
               )}
 
               {project.images?.length > 1 && (
-                <div className="grid grid-cols-2 gap-3">
+                <div className="grid gap-3 md:grid-cols-2">
                   {project.images.slice(1).map((imageName, index) => (
                     <img
                       key={`${imageName}-${index}`}

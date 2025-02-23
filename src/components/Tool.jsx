@@ -34,7 +34,7 @@ const Tool = ({ tool, type, icon }) => {
   return (
     <>
       {tool && (
-        <div className="flex h-full items-center gap-3 p-2">
+        <div className="flex h-full flex-col items-center p-2 text-center">
           {icon && (
             <div className="">
               <IconComponent className="h-6 w-6" />
@@ -42,7 +42,7 @@ const Tool = ({ tool, type, icon }) => {
           )}
 
           <div className={`${icon || type ? 'pt-2' : ''}`}>
-            {tool}
+            <div>{tool}</div>
             {type && <p className="text-neutral-light text-xs">{type}</p>}
           </div>
         </div>

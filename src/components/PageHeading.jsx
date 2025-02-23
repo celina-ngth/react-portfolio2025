@@ -1,8 +1,13 @@
-const PageHeading = ({ title, description }) => {
+const PageHeading = ({ title, description, center }) => {
   return (
     <>
-      <section className="flex flex-col">
-        <h1 className="py-4 text-xl font-black">{title} —</h1>
+      <section
+        className={`flex flex-col ${center && 'items-center text-center'}`}
+      >
+        <h2 className="pb-4 text-xl font-black">
+          {title} {!center && <>—</>}
+          {center && <div>—</div>}
+        </h2>
         {description && <div className="text-md pb-5">{description}</div>}
       </section>
     </>

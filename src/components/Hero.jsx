@@ -16,7 +16,6 @@ const Hero = () => {
 
         <div className="flex flex-col gap-3 lg:flex-row">
           <Button to="/about" title="Voir mon profil complet" />
-          <Button to="/about" title="Télécharger mon CV" style="reversed" />
         </div>
       </div>
     </div>

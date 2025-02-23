@@ -4,6 +4,7 @@ import AboutHome from '../components/AboutHome'
 import ProjectCard from '../components/ProjectCard'
 import Hero from '../components/Hero'
 import Link from '../components/ui/Link'
+import Button from '../components/ui/Button'
 import { TOOLS, PROJECTS_DETAILS } from '../api/data'
 
 const Home = () => {
@@ -32,8 +33,9 @@ const Home = () => {
           <PageHeading
             title="Compétences"
             description="Langages, frameworks, méthodo, outils et autres"
+            center
           />
-          <div className="mb-4 grid grid-cols-4">
+          <div className="mb-4 grid grid-cols-2 gap-3 lg:grid-cols-4">
             {TOOLS?.slice(0, 11).map((tool, index) => (
               <Tool
                 key={`${tool}-${index}`}
@@ -43,7 +45,9 @@ const Home = () => {
               />
             ))}
           </div>
-          <Link to="/about" title="Toutes les compétences" />
+          <div className="flex justify-center py-3">
+            <Button to="/about" title="Toutes les compétences" />
+          </div>
         </div>
       </div>
     </>

@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
 import './App.css'
 import Home from './pages/Home'
 import Layout from './layout/Layout'
@@ -7,7 +7,6 @@ import ProjectListPage from './pages/ProjectListPage'
 import ProjectPage from './pages/ProjectPage'
 import Contact from './pages/Contact'
 import { useEffect } from 'react'
-import { useLocation } from 'react-router-dom'
 
 function ScrollToTop() {
   const { pathname } = useLocation()

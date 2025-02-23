@@ -1,5 +1,5 @@
 const Contact = () => {
-  return <div className="container px-4">Contact</div>
+  return <div className="container h-screen px-4"></div>
 }
 
 export default Contact
