@@ -23,8 +23,7 @@ export const PROJECTS_DETAILS = [
       `SEO : optimisation SEO pour améliorer la visibilité du site`,
       `A/B tests avec Unleash et AB Tasty, suivi des performances avec Google Analytics et Tag Commander`,
     ],
-    image:
-      'https://images.pexels.com/photos/7130560/pexels-photo-7130560.jpeg?auto=compress&cs=tinysrgb&w=500&h=220&dpr=2',
+    image: 'mdm-1.png',
     stack: [
       'Vue 3',
       'Node.js',
@@ -45,7 +44,7 @@ export const PROJECTS_DETAILS = [
     dates: `février 2021 - septembre 2021 (8 mois)`,
     context:
       'Fiters est une entreprise qui propose des solutions et programmes de coaching sportif en entreprise',
-    description: 'Refonte du site e-commerce Maisons du Monde',
+    description: `Refonte du site vitrine et développement sur les 3 webapps`,
     size: 'small',
     list: [
       `Refonte du site vitrine : utilisation de Vue 2 avec Quasar pour le front-end et Node.js et Firebase pour le développement back-end et la gestion de la base de données en temps réel`,
@@ -53,8 +52,7 @@ export const PROJECTS_DETAILS = [
       `Mise en place du headless CMS Contentful permettant aux équipes marketing de mettre à jour le site en autonomie`,
       `Collaboration client et suivi : échanges avec les clients pour comprendre leurs besoins, fournir des mises à jour`,
     ],
-    image:
-      'https://images.pexels.com/photos/7130560/pexels-photo-7130560.jpeg?auto=compress&cs=tinysrgb&w=500&h=220&dpr=2',
+    image: 'fiters-1.png',
     stack: ['Vue 2', 'Node.js', 'Firebase', 'Headless CMS Contentful '],
   },
   {
@@ -62,15 +60,14 @@ export const PROJECTS_DETAILS = [
     type: 'pro',
     title: 'Product owner',
     company: 'BNP Paribas',
-    link: '',
+    link: '/project/bnp-paribas',
     dates: `octobre 2016 - mars 2020 (3 ans et demi)`,
     context:
-      'Contexte : développement d’un intranet destiné à l’ensemble du Groupe BNP Paribas (280k collaborateurs)',
-    description: 'Refonte du site e-commerce Maisons du Monde',
+      'Développement d’un intranet destiné à l’ensemble du Groupe BNP Paribas (280k collaborateurs)',
+    description: `Refonte de l'intranet du Groupe`,
     size: 'small',
     list: [],
-    image:
-      'https://images.pexels.com/photos/7130560/pexels-photo-7130560.jpeg?auto=compress&cs=tinysrgb&w=500&h=220&dpr=2',
+    image: 'bnpparibas-1.png',
     stack: [],
   },
   {
@@ -81,11 +78,10 @@ export const PROJECTS_DETAILS = [
     link: '',
     dates: `Octobre 2014 à Septembre 2016 (2 ans)`,
     context: '',
-    description: 'Refonte du site e-commerce Maisons du Monde',
+    description: '',
     size: 'small',
     list: [],
-    image:
-      'https://images.pexels.com/photos/7130560/pexels-photo-7130560.jpeg?auto=compress&cs=tinysrgb&w=500&h=220&dpr=2',
+    image: '',
     stack: [],
   },
   {
@@ -94,8 +90,7 @@ export const PROJECTS_DETAILS = [
     title: 'Pomodoro timer',
     link: '/project/pomodoro-timer',
     description: 'Un timer basé sur la méthode Pomodoro',
-    image:
-      'https://images.pexels.com/photos/7130560/pexels-photo-7130560.jpeg?auto=compress&cs=tinysrgb&w=500&h=220&dpr=2',
+    image: 'pomodoro-1.png',
     size: 'large',
     stack: ['React', 'Typescript', 'Tailwind'],
   },
@@ -105,8 +100,7 @@ export const PROJECTS_DETAILS = [
     title: 'Medium',
     link: '/project/medium',
     description: 'Copycat du site Medium',
-    image:
-      'https://images.pexels.com/photos/7130560/pexels-photo-7130560.jpeg?auto=compress&cs=tinysrgb&w=500&h=220&dpr=2',
+    image: 'medium.png',
     size: 'small',
     stack: ['React', 'Typescript', 'Tailwind'],
   },
@@ -116,8 +110,7 @@ export const PROJECTS_DETAILS = [
     title: 'Todo app',
     link: '/project/todo-app',
     description: 'Juste une autre todo app',
-    image:
-      'https://images.pexels.com/photos/7130560/pexels-photo-7130560.jpeg?auto=compress&cs=tinysrgb&w=500&h=220&dpr=2',
+    image: 'todoapp.png',
     size: 'small',
     stack: ['React', 'Typescript', 'Tailwind'],
   },
@@ -158,87 +151,135 @@ export const EDUCATION = [
 
 export const TOOLS = [
   {
-    name: 'Vue3 Composition API',
+    name: 'Vue 3 Composition API',
     type: 'Framework',
+    icon: 'vuejs',
+    category: 'framework',
   },
   {
     name: 'React',
     type: 'Framework',
+    icon: 'react',
+    category: 'framework',
   },
   {
     name: 'Typescript',
     type: 'Langage',
+    icon: 'typescript',
+    category: 'language',
   },
   {
     name: 'JavaScript',
     type: 'Langage',
+    icon: 'javascript',
+    category: 'language',
   },
   {
     name: 'NextJS',
     type: 'Framework',
+    icon: 'nextjs',
+    category: 'framework',
   },
   {
     name: 'Tailwind',
     type: 'Framework CSS',
+    icon: 'tailwindcss',
+    category: 'framework',
   },
   {
     name: 'Design System',
     type: 'Design',
+    icon: 'designsystem',
+    category: 'design',
   },
   {
-    name: 'Vitest',
-    type: 'Tests',
-  },
-  {
-    name: 'TDD',
-    type: 'Méthodologie',
+    name: 'Figma',
+    type: 'Design',
+    icon: 'figma',
+    category: 'design',
   },
   {
     name: 'GraphQL',
     type: 'API',
-  },
-  {
-    name: 'Urql',
-    type: 'API',
-  },
-  {
-    name: 'API Rest',
-    type: 'API',
-  },
-  {
-    name: 'Pinia',
-    type: 'State management',
-  },
-  {
-    name: 'VueX',
-    type: 'State management',
-  },
-  {
-    name: 'Méthode Agile Scrum',
-    type: 'Méthodologie',
-  },
-  {
-    name: 'Storybook',
-    type: 'Visualisation de composants UI',
-  },
-  {
-    name: 'Histoire',
-    type: 'Visualisation de composants UI',
-  },
-  {
-    name: 'Architecture microservice',
-    type: 'API',
-  },
-  {
-    name: 'Nuxt',
-    type: 'Framework',
+    icon: 'graphql',
+    category: 'api',
   },
   {
     name: 'Git',
     type: 'Versionning',
+    icon: 'git',
+    category: 'tool',
+  },
+  {
+    name: 'Storybook',
+    type: 'Visualisation de composants',
+    icon: 'storybook',
+    category: 'designsystem',
+  },
+  {
+    name: 'Nuxt',
+    type: 'Framework',
+    icon: 'nuxt',
+    category: 'framework',
+  },
+  {
+    name: 'Vitest',
+    type: 'Tests',
+    icon: 'vitest',
+    category: 'tests',
   },
   {
     name: 'Prismic',
     type: 'Headless CMS',
+    icon: 'prismic',
+    category: 'cms',
+  },
+  {
+    name: 'Urql',
+    type: 'API',
+    icon: '',
+    category: 'api',
+  },
+  {
+    name: 'API Rest',
+    type: 'API',
+    icon: '',
+    category: 'api',
+  },
+  {
+    name: 'Pinia',
+    type: 'State management',
+    icon: '',
+    category: 'state',
+  },
+  {
+    name: 'VueX',
+    type: 'State management',
+    icon: '',
+    category: 'state',
+  },
+  {
+    name: 'Méthode Agile Scrum',
+    type: 'Méthodologie',
+    icon: '',
+    category: 'methodology',
+  },
+  {
+    name: 'TDD',
+    type: 'Méthodologie',
+    icon: '',
+    category: 'methodology',
+  },
+  {
+    name: 'Histoire',
+    type: 'Visualisation de composants',
+    icon: '',
+    category: 'designsystem',
+  },
+  {
+    name: 'Architecture microservice',
+    type: 'API',
+    icon: '',
+    category: 'api',
   },
 ]

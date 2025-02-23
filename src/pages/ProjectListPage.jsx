@@ -3,11 +3,15 @@ import ProjectCard from '../components/ProjectCard'
 import { PROJECTS_DETAILS } from '../api/data'
 
 const ProjectListPage = () => {
-  const pro = PROJECTS_DETAILS.filter((project) => project.type === 'pro')
-  const other = PROJECTS_DETAILS.filter((project) => project.type === 'other')
+  const pro = PROJECTS_DETAILS.filter(
+    (project) => project.type === 'pro',
+  ).slice(0, 3)
+  const other = PROJECTS_DETAILS.filter(
+    (project) => project.type === 'other',
+  ).slice(0, 3)
 
   return (
-    <div className="container px-4">
+    <div className="container px-4 pt-8">
       <div className="pb-8">
         <PageHeading title="Projets professionnels" />
         <div className="grid gap-4 md:grid-flow-col md:grid-rows-2">

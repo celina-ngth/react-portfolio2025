@@ -8,9 +8,11 @@ const AboutText = () => {
       <div className="container grid grid-cols-3 gap-4 p-4 lg:flex-row lg:gap-8">
         <div className="col-span-1">
           <PageHeading title="À propos" />
+
           <Link to={'/contact'}>
             <div>Contact</div>
           </Link>
+
           <Link to={'/contact'}>
             <div>CV</div>
           </Link>
@@ -21,14 +23,21 @@ const AboutText = () => {
             Mon état d’esprit : apprendre chaque jour, trouver des solutions et
             toujours m’améliorer 💪
           </p>
-          <p className="columns-2">
-            Développeuse front-end JavaScript depuis plus de 4 ans, je suis
-            dotée d’une sensibilité graphique tirée de mes études de design et
-            je bénéficie de 3 ans d’expériences précédentes en temps que Product
-            Owner. J’accorde depuis, une attention particulière à l’expérience
-            utilisateur et à la qualité des interfaces, pour créer des produits
-            aussi fonctionnels que solides techniquement.
-          </p>
+
+          <div className="flex gap-6">
+            <p className="w-full">
+              Développeuse front-end JavaScript depuis plus de 4 ans, je suis
+              dotée d’une sensibilité graphique tirée de mes études de design et
+              je bénéficie de 3 ans d’expériences précédentes en temps que
+              Product Owner.
+            </p>
+            <p className="w-full">
+              J’accorde depuis, une attention particulière à l’expérience
+              utilisateur et à la qualité des interfaces, pour créer des
+              produits aussi fonctionnels que solides techniquement.
+            </p>
+          </div>
+
           <Button
             to="/about"
             title="Voir mon profil complet"

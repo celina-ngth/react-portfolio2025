@@ -6,7 +6,22 @@ import AboutText from '../components/AboutText'
 import Tool from '../components/Tool'
 
 const AboutPage = () => {
+  const LANGUAGES = ['language', 'framework', 'tool', 'state']
+  const METHODOLOGY = [
+    'designsystem',
+    'methodology',
+    'api',
+    'tests',
+    'design',
+    'cms',
+  ]
+
   const projects = PROJECTS_DETAILS.filter((project) => project.type === 'pro')
+
+  const languages = TOOLS.filter((tool) => LANGUAGES.includes(tool.category))
+  const methodology = TOOLS.filter((tool) =>
+    METHODOLOGY.includes(tool.category),
+  )
 
   return (
     <>
@@ -35,13 +50,29 @@ const AboutPage = () => {
         </div>
 
         <div className="container px-4">
-          <PageHeading
-            title="Compétences"
-            description="Langages, frameworks, méthodo, outils et autres"
-          />
-          <div className="flex flex-wrap items-center gap-3">
-            {TOOLS?.map((tool, index) => (
-              <Tool key={`${tool}-${index}`} tool={tool.name} />
+          <PageHeading title="Langages, frameworks et conception" />
+          <div className="grid grid-cols-4 gap-4">
+            {languages?.map((tool, index) => (
+              <Tool
+                key={`${tool}-${index}`}
+                tool={tool.name}
+                type={tool.type}
+                icon={tool.icon}
+              />
+            ))}
+          </div>
+        </div>
+
+        <div className="container px-4">
+          <PageHeading title="Méthodologie, outils et autres" />
+          <div className="grid grid-cols-4 gap-4">
+            {methodology?.map((tool, index) => (
+              <Tool
+                key={`${tool}-${index}`}
+                tool={tool.name}
+                type={tool.type}
+                icon={tool.icon}
+              />
             ))}
           </div>
         </div>

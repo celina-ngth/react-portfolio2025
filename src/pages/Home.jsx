@@ -33,11 +33,17 @@ const Home = () => {
             title="Compétences"
             description="Langages, frameworks, méthodo, outils et autres"
           />
-          <div className="flex flex-wrap items-center gap-3">
-            {TOOLS?.map((tool, index) => (
-              <Tool key={`${tool}-${index}`} tool={tool.name} />
+          <div className="mb-4 grid grid-cols-4">
+            {TOOLS?.slice(0, 11).map((tool, index) => (
+              <Tool
+                key={`${tool}-${index}`}
+                tool={tool.name}
+                type={tool.type}
+                icon={tool.icon}
+              />
             ))}
           </div>
+          <Link to="/tools" title="Toutes les compétences" />
         </div>
       </div>
     </>
