@@ -43,7 +43,7 @@ const Home = () => {
               />
             ))}
           </div>
-          <Link to="/tools" title="Toutes les compétences" />
+          <Link to="/about" title="Toutes les compétences" />
         </div>
       </div>
     </>

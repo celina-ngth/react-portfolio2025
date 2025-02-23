@@ -5,14 +5,14 @@ const ProjectCard = ({ project }) => {
   const [imageSrc, setImageSrc] = useState(null)
 
   useEffect(() => {
-    if (project.image) {
-      import(/* @vite-ignore */ `../assets/portfolio/${project.image}`).then(
-        (image) => {
-          setImageSrc(image.default)
-        },
-      )
+    if (project.images?.[0]) {
+      import(
+        /* @vite-ignore */ `../assets/projects/${project.images[0]}.webp`
+      ).then((image) => {
+        setImageSrc(image.default)
+      })
     }
-  }, [project.image])
+  }, [project.images])
 
   return (
     <>
@@ -37,7 +37,7 @@ const ProjectCard = ({ project }) => {
                 </span>
                 {project.company && ` | ${project.company}`}
               </h5>
-              <p>{project.description}</p>
+              <p>{project.context}</p>
             </div>
           </div>
         </Link>
