@@ -12,7 +12,7 @@ export const PROJECTS_DETAILS = [
     dates: `2021 - Aujourd'hui`,
     context: 'Refonte du site e-commerce Maisons du Monde',
     description: `Dans le cadre de la refonte du site e-commerce Maisons du Monde, j'interviens en tant que développeuse front-end Vue 3.
-    La refonte s'inscrit dans un cadre de travail Agile et en partenariat avec une equipe de designers et de developpeurs.`,
+    Cette refonte s'inscrit dans une volonté d'améliorer les performances et la qualité du site, en utilisant un cadre de travail Agile.`,
     size: 'large',
     list: [
       'Refonte front-end et back-for-front en SSR avec <b>Vue 3 Composition API</b>, <b>TypeScript</b>, <b>Node</b>, <b>Koa</b>, <b>Tailwind</b>, <b>GraphQL</b>',

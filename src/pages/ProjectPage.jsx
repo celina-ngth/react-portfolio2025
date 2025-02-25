@@ -47,7 +47,7 @@ const ProjectPage = () => {
             </div>
           )}
 
-          <div className="pt-3 text-center md:py-6">
+          <div className="pt-3 text-center lg:py-6">
             {project.company && (
               <h3 className="text-neutral-light text-lg md:pb-3">
                 {project.company}
@@ -56,7 +56,7 @@ const ProjectPage = () => {
             <PageHeading title={project.title} center />
           </div>
 
-          <div className="grid items-baseline gap-4 lg:grid-cols-8">
+          <div className="grid items-baseline gap-6 lg:grid-cols-8">
             <div className="flex flex-col gap-6 lg:col-span-2">
               {project.dates && (
                 <div>
@@ -91,7 +91,7 @@ const ProjectPage = () => {
                       {project.stack.map((item, index) => (
                         <div
                           key={`${item}-${index}`}
-                          className="bg-secondary rounded-lg px-2"
+                          className="bg-primary rounded-lg px-2"
                         >
                           <Tool tool={item} />
                         </div>
@@ -102,7 +102,7 @@ const ProjectPage = () => {
               </div>
             </div>
 
-            <div className="flex flex-col gap-6 lg:col-span-6 lg:pl-10">
+            <div className="flex flex-col gap-6 lg:col-span-6 lg:pl-6 xl:pl-10">
               {project.context && (
                 <div>
                   <h4 className="text-neutral-light mb-2 text-sm font-semibold uppercase">

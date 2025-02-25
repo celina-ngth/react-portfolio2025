@@ -3,7 +3,7 @@ import celina from '../assets/celina-ngeth.jpeg'
 
 const AboutHome = () => {
   return (
-    <div className="bg-secondary py-4 lg:py-10">
+    <div className="bg-secondary py-4 xl:py-10">
       <div className="container flex w-full flex-col gap-4 p-4 lg:flex-row lg:gap-8">
         <div className="w-full lg:w-1/2">
           <img

@@ -5,7 +5,6 @@ import Layout from './layout/Layout'
 import About from './pages/AboutPage'
 import ProjectListPage from './pages/ProjectListPage'
 import ProjectPage from './pages/ProjectPage'
-import Contact from './pages/Contact'
 import { useEffect } from 'react'
 
 function ScrollToTop() {
@@ -25,7 +24,6 @@ function App() {
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/contact" element={<Contact />} />
           <Route path="/projects" element={<ProjectListPage />} />
           <Route path="/about" element={<About />} />
           <Route path="/project/:id" element={<ProjectPage />} />

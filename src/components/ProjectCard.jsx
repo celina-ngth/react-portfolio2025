@@ -21,7 +21,7 @@ const ProjectCard = ({ project }) => {
           to={project.link}
           className={`${project.size === 'small' ? 'md:col-span-1 md:row-span-1' : 'md:col-span-2 md:row-span-2'} `}
         >
-          <div className="bg-secondary group flex h-full flex-col rounded-xl">
+          <div className="bg-primary group flex h-full flex-col rounded-xl">
             <div className="bg-neutral-light flex-grow overflow-hidden rounded-t-xl">
               <img
                 className="h-full scale-101 rounded-t-xl object-cover opacity-90 duration-200 ease-in-out hover:translate-0 hover:scale-102 hover:opacity-99"

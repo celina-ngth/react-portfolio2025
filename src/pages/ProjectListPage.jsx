@@ -11,7 +11,7 @@ const ProjectListPage = () => {
   ).slice(0, 3)
 
   return (
-    <div className="container px-4 pt-8">
+    <div className="container px-4 pt-6 lg:pt-8">
       <div className="pb-8">
         <PageHeading title="Projets professionnels" />
         <div className="grid gap-4 md:grid-flow-col md:grid-rows-2">

@@ -35,7 +35,7 @@ const Home = () => {
             description="Langages, frameworks, méthodo, outils et autres"
             center
           />
-          <div className="mb-4 grid grid-cols-2 gap-3 lg:grid-cols-4">
+          <div className="mb-4 grid grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-4">
             {TOOLS?.slice(0, 11).map((tool, index) => (
               <Tool
                 key={`${tool}-${index}`}

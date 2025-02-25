@@ -8,7 +8,9 @@ const PageHeading = ({ title, description, center }) => {
           {title} {!center && <>—</>}
           {center && <div>—</div>}
         </h2>
-        {description && <div className="text-md pb-5">{description}</div>}
+        {description && (
+          <div className="pb-5 text-lg font-semibold">{description}</div>
+        )}
       </section>
     </>
   )

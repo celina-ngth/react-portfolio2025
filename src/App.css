@@ -1,13 +1,14 @@
 @import "tailwindcss";
-@import "tailwindcss-animated";
 
 @theme {
   --color-light: #fff;
   --color-dark: #292725;
-  --color-primary: #fafaf9;
-  --color-secondary: #efedeb;
+  --color-primary: #f3f3ee;
+  --color-secondary: #e4eaea;
   --color-neutral: #444;
   --color-neutral-light: #9b9894;
+  --color-highlight: khaki;
+  --color-highlight-intense: #ff6c65;
 
   --spacing-1: 2px;
   --spacing-2: 8px;
@@ -31,25 +32,15 @@
   --text-sm--line-height: 1.4rem;
   --text-md--line-height: 1.7rem;
   --text-lg--line-height: 2.2rem;
-  --text-xl--line-height: 3.2rem;
+  --text-xl--line-height: 3.6rem;
   --text-2xl--line-height: 4rem;
 }
 
 
-@layer components {
-    h1 {
-      font-weight: semibold;
-  }
-
-    h2 {
-      font-weight: semibold;
-    }
-}
-
 body {
   color: var(--color-neutral);
-  font-size: 1.2rem;
-  font-weight: 300;
+  font-size: 1.3rem;
+  font-weight: 250;
 }
 
 #root {
@@ -67,26 +58,4 @@ b {
 .container {
   max-width: 1120px;
   margin: 0 auto;
-}
-
-.page-enter {
-  opacity: 0;
-  transform: translateY(10px);
-}
-
-.page-enter-active {
-  opacity: 1;
-  transform: translateY(0);
-  transition: opacity 0.3s ease-out, transform 0.3s ease-out;
-}
-
-.page-exit {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.page-exit-active {
-  opacity: 0;
-  transform: translateY(-10px);
-  transition: opacity 0.3s ease-in, transform 0.3s ease-in;
 }

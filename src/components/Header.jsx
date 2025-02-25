@@ -12,19 +12,20 @@ const Header = () => {
 
         <div className="flex flex-col gap-2 text-sm md:flex-row md:gap-4">
           <Link to={'/projects'}>
-            <div>Projets</div>
+            <div className="group hover:text-dark underline-offset-2 transition duration-200 ease-in-out hover:underline">
+              Projets
+            </div>
           </Link>
           <Link to={'/about'}>
-            <div>Profil</div>
+            <div className="group hover:text-dark underline-offset-2 transition duration-200 ease-in-out hover:underline">
+              Profil
+            </div>
           </Link>
           <a href={CV} target="_blank">
-            <div className="flex items-center gap-2">
+            <div className="group hover:text-dark flex items-center gap-2 underline-offset-2 transition duration-200 ease-in-out hover:underline">
               CV <Download className="h-3 w-3" />
             </div>
           </a>
-          <Link to={'/contact'}>
-            <div>Contact</div>
-          </Link>
         </div>
       </div>
     </header>

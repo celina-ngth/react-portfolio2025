@@ -2,8 +2,8 @@ import Button from './ui/Button'
 
 const Hero = () => {
   return (
-    <div className="bg-dark mb-8 lg:py-10">
-      <div className="container flex w-full flex-col gap-6 px-4 py-10 text-white">
+    <div className="py-8 lg:py-10">
+      <div className="container flex w-full flex-col gap-6 px-4">
         <div className="w-full text-xl">
           <h1 className="font-extralight">
             — Hello, je m&apos;appelle <i>Célina</i>,

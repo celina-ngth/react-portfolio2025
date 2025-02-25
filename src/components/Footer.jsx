@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import PageHeading from './PageHeading'
 import CV from '../assets/cv_celina-ngeth.pdf'
 import { Download } from 'lucide-react'
+import { SquareArrowOutUpRight } from 'lucide-react'
 
 const Footer = () => {
   return (
@@ -18,9 +19,6 @@ const Footer = () => {
             <Link to={'/about'}>
               <div>Profil</div>
             </Link>
-            <Link to={'/contact'}>
-              <div>Contact</div>
-            </Link>
             <a href={CV} target="_blank">
               <div className="flex items-center gap-2">
                 CV <Download className="h-3 w-3" />
@@ -30,23 +28,25 @@ const Footer = () => {
 
           <div className="flex flex-col gap-2 md:gap-3">
             <h4 className="mt-4 mb-2 font-semibold uppercase">Liens</h4>
-            <Link to={'/projects'}>
-              <div>LinkedIn</div>
+            <Link to="https://www.linkedin.com/in/celina-n/">
+              <div className="flex items-center gap-2">
+                LinkedIn <SquareArrowOutUpRight className="h-3 w-3" />
+              </div>
             </Link>
-            <Link to={'/about'}>
-              <div>Github</div>
+            <Link to="https://github.com/celina-ngth/">
+              <div className="flex items-center gap-2">
+                Github <SquareArrowOutUpRight className="h-3 w-3" />
+              </div>
             </Link>
           </div>
           <div className="flex flex-col gap-2 md:gap-3">
             <h4 className="mt-4 mb-2 font-semibold uppercase">Mail</h4>
-            <Link to={'/projects'}>
+            <a href="mailto:ngeth.celina@gmail.com">
               <div>ngeth.celina@gmail.com</div>
-            </Link>
+            </a>
 
             <h4 className="mt-4 mb-2 font-semibold uppercase">Localisation</h4>
-            <Link to={'/projects'}>
-              <div>Paris, France</div>
-            </Link>
+            <div>Paris, France</div>
           </div>
         </div>
       </div>
