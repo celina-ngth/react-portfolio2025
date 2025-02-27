@@ -1,5 +1,5 @@
 import Button from './ui/Button'
-import celina from '../assets/celina-ngeth.jpeg'
+import celina from '../assets/celina.png'
 
 const AboutHome = () => {
   return (

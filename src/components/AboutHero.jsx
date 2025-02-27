@@ -1,4 +1,4 @@
-import celina from '../assets/celina-ngeth.jpeg'
+import celina from '../assets/pp-celina.jpg'
 
 const AboutHero = () => {
   return (
