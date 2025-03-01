@@ -3,10 +3,10 @@ import Button from './ui/Button'
 const Hero = () => {
   return (
     <div className="py-8 lg:py-10">
-      <div className="container flex w-full flex-col gap-6 px-4">
+      <div className="container flex w-full flex-col gap-6 px-4 py-4 lg:py-6">
         <div className="w-full text-xl">
           <h1 className="font-extralight">
-            — Hello, je m&apos;appelle <i>Célina</i>,
+            Hello, je m&apos;appelle <i>Célina</i>,
             <div className="font-medium">
               et je suis développeuse <strong>front-end JS</strong>
             </div>

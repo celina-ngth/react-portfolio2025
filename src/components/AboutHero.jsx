@@ -7,7 +7,7 @@ const AboutHero = () => {
         <div className="relative container flex h-[600px] flex-col overflow-hidden py-6 md:h-fit md:py-10">
           <div className="z-10 flex h-full translate-y-4 flex-col justify-end gap-4 text-xl">
             <h1>
-              — Célina Ngeth,
+              Célina Ngeth,
               <div className="font-semibold">
                 Développeuse <strong>front-end JavaScript</strong>
               </div>

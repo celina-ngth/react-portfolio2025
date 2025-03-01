@@ -1,5 +1,5 @@
 import PageHeading from './PageHeading'
-import CV from '../assets/cv_celina-ngeth.pdf'
+import CV from '../assets/cv-celina_ngeth.pdf'
 import { Download } from 'lucide-react'
 
 const AboutText = () => {

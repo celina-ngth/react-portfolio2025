@@ -1,10 +1,10 @@
 import { Link } from 'react-router-dom'
-import CV from '../assets/cv_celina-ngeth.pdf'
+import CV from '../assets/cv-celina_ngeth.pdf'
 import { Download } from 'lucide-react'
 
 const Header = () => {
   return (
-    <header className="border-neutral-light w-full border-b py-4">
+    <header className="w-full py-4">
       <div className="container flex h-16 items-center justify-between px-4">
         <Link to={'/'}>
           <h1 className="text-xl">Célina —</h1>
