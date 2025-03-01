@@ -4,11 +4,16 @@ import PageHeading from '../components/PageHeading'
 import { PROJECTS_DETAILS } from '../api/data'
 import { MoveLeft, SquareArrowOutUpRight } from 'lucide-react'
 import Tool from '../components/Tool'
+import ProjectCard from '../components/ProjectCard'
 
 const ProjectPage = () => {
   const { id } = useParams()
 
   const project = PROJECTS_DETAILS.find((project) => project.id === id)
+  const nextProjectIndex = PROJECTS_DETAILS.indexOf(project) + 1
+  const nextProject = PROJECTS_DETAILS.filter((project) =>
+    Boolean(project.link),
+  )[nextProjectIndex]
 
   const [imageSrcs, setImageSrcs] = useState({})
 
@@ -111,7 +116,6 @@ const ProjectPage = () => {
                   <div>{project.context}</div>
                 </div>
               )}
-
               {project.description && (
                 <div>
                   <h4 className="text-neutral-light mb-2 text-sm font-semibold uppercase">
@@ -120,7 +124,6 @@ const ProjectPage = () => {
                   <div>{project.description}</div>
                 </div>
               )}
-
               {project.list?.length > 0 && (
                 <div>
                   <h4 className="text-neutral-light mb-2 text-sm font-semibold uppercase">
@@ -136,7 +139,6 @@ const ProjectPage = () => {
                   </ul>
                 </div>
               )}
-
               {project.images?.length > 1 && (
                 <div className="grid gap-3 md:grid-cols-2">
                   {project.images.slice(1).map((imageName, index) => (
@@ -146,6 +148,12 @@ const ProjectPage = () => {
                       src={imageSrcs[index + 1]}
                     />
                   ))}
+                </div>
+              )}
+              {nextProject && (
+                <div className="mt-6 w-1/2">
+                  <PageHeading title="Autre projet" />
+                  <ProjectCard project={nextProject} small />
                 </div>
               )}
             </div>
