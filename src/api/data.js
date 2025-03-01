@@ -253,6 +253,12 @@ export const TOOLS = [
     category: 'api',
   },
   {
+    name: 'Urql',
+    type: 'API',
+    icon: 'graphql',
+    category: 'api',
+  },
+  {
     name: 'Git',
     type: 'Versionning',
     icon: 'git',
@@ -283,15 +289,9 @@ export const TOOLS = [
     category: 'cms',
   },
   {
-    name: 'Urql',
-    type: 'API',
-    icon: '',
-    category: 'api',
-  },
-  {
     name: 'API Rest',
     type: 'API',
-    icon: '',
+    icon: 'api',
     category: 'api',
   },
   {
@@ -329,5 +329,11 @@ export const TOOLS = [
     type: 'API',
     icon: '',
     category: 'api',
+  },
+  {
+    name: 'Suite Atlassian',
+    type: 'Outil suivi de projet',
+    icon: '',
+    category: 'methodology',
   },
 ]

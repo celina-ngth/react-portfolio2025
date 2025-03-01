@@ -1,4 +1,10 @@
-import { FaVuejs, FaReact, FaGitAlt, FaFigma } from 'react-icons/fa'
+import {
+  FaVuejs,
+  FaReact,
+  FaGitAlt,
+  FaFigma,
+  FaAtlassian,
+} from 'react-icons/fa'
 import {
   SiTypescript,
   SiVitest,
@@ -10,6 +16,7 @@ import { IoLogoJavascript } from 'react-icons/io5'
 import { RiNextjsLine, RiTailwindCssFill } from 'react-icons/ri'
 import { MdOutlineDesignServices } from 'react-icons/md'
 import { GrGraphQl } from 'react-icons/gr'
+import { TbApi } from 'react-icons/tb'
 
 const iconMap = {
   vuejs: FaVuejs,
@@ -26,6 +33,8 @@ const iconMap = {
   git: FaGitAlt,
   prismic: SiPrismic,
   figma: FaFigma,
+  api: TbApi,
+  atlassian: FaAtlassian,
 }
 
 const Tool = ({ tool, type, icon }) => {

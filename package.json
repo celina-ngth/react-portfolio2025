@@ -10,14 +10,17 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emotion/react": "^11.14.0",
     "@tailwindcss/vite": "^4.0.3",
     "lucide-react": "^0.474.0",
     "prettier": "^3.5.0",
     "prettier-plugin-tailwindcss": "^0.6.11",
     "react": "^18.3.1",
+    "react-awesome-reveal": "^4.3.1",
     "react-dom": "^18.3.1",
     "react-icons": "^5.5.0",
     "react-router-dom": "^7.1.5",
+    "react-spring": "^9.7.5",
     "tailwindcss": "^4.0.3",
     "tailwindcss-animated": "^2.0.0"
   },

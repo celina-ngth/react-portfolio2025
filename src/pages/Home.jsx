@@ -6,6 +6,7 @@ import Hero from '../components/Hero'
 import Link from '../components/ui/Link'
 import Button from '../components/ui/Button'
 import { TOOLS, PROJECTS_DETAILS } from '../api/data'
+import { Fade } from 'react-awesome-reveal'
 
 const Home = () => {
   const projects = PROJECTS_DETAILS.filter(
@@ -14,41 +15,51 @@ const Home = () => {
 
   return (
     <>
-      <Hero />
+      <Fade>
+        <Hero />
+      </Fade>
 
       <div className="flex w-full flex-col gap-8">
-        <div className="container px-4">
-          <PageHeading title="Dernières expériences" />
-          <div className="mb-4 grid gap-4 md:grid-flow-col md:grid-rows-2">
-            {projects?.map((project) => (
-              <ProjectCard key={project.title} project={project} />
-            ))}
+        <Fade>
+          <div className="container px-4">
+            <Fade cascade>
+              <PageHeading title="Dernières expériences" />
+              <div className="mb-4 grid gap-4 md:grid-flow-col md:grid-rows-2">
+                {projects?.map((project) => (
+                  <ProjectCard key={project.title} project={project} />
+                ))}
+              </div>
+            </Fade>
+            <Link to="/projects" title="Tous les projets" />
           </div>
-          <Link to="/projects" title="Tous les projets" />
-        </div>
+        </Fade>
 
-        <AboutHome />
+        <Fade>
+          <AboutHome />
+        </Fade>
 
-        <div className="container px-4">
-          <PageHeading
-            title="Compétences"
-            description="Langages, frameworks, méthodo, outils et autres"
-            center
-          />
-          <div className="mb-4 grid grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-4">
-            {TOOLS?.slice(0, 11).map((tool, index) => (
-              <Tool
-                key={`${tool}-${index}`}
-                tool={tool.name}
-                type={tool.type}
-                icon={tool.icon}
-              />
-            ))}
+        <Fade>
+          <div className="container px-4">
+            <PageHeading
+              title="Compétences"
+              description="Langages, frameworks, méthodo, outils et autres"
+              center
+            />
+            <div className="mb-4 grid grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-4">
+              {TOOLS?.slice(0, 11).map((tool, index) => (
+                <Tool
+                  key={`${tool}-${index}`}
+                  tool={tool.name}
+                  type={tool.type}
+                  icon={tool.icon}
+                />
+              ))}
+            </div>
+            <div className="flex justify-center py-3">
+              <Button to="/about" title="Toutes les compétences" />
+            </div>
           </div>
-          <div className="flex justify-center py-3">
-            <Button to="/about" title="Toutes les compétences" />
-          </div>
-        </div>
+        </Fade>
       </div>
     </>
   )

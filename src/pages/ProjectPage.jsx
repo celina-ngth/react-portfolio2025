@@ -91,7 +91,7 @@ const ProjectPage = () => {
                       {project.stack.map((item, index) => (
                         <div
                           key={`${item}-${index}`}
-                          className="bg-primary rounded-lg px-2"
+                          className="bg-primary rounded-lg px-2 text-sm"
                         >
                           <Tool tool={item} />
                         </div>
